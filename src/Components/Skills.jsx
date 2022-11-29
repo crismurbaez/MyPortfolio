@@ -1,0 +1,167 @@
+const skills = [
+    {
+        id: 1,
+        name: 'HTML',
+        href: '#',
+        imageSrc: '/images/html.png',
+        imageAlt: 'HTML.',
+    },
+    {
+        id: 2,
+        name: 'CSS',
+        href: '#',
+        imageSrc: '/images/css.png',
+        imageAlt: 'CSS.',
+    },
+    {
+        id: 3,
+        name: 'Java Script',
+        href: '#',
+        imageSrc: '/images/js.png',
+        imageAlt: 'Java Script.',
+    },
+    {
+        id: 8,
+        name: 'React',
+        href: '#',
+        imageSrc: '/images/react.png',
+        imageAlt: 'React.',
+    },
+    {
+        id: 7,
+        name: 'Redux',
+        href: '#',
+        imageSrc: '/images/redux.png',
+        imageAlt: 'Redux.',
+    },
+
+    {
+        id: 2,
+        name: 'GIT',
+        href: '#',
+        imageSrc: '/images/git.png',
+        imageAlt: 'GIT.',
+    },
+
+    {
+        id: 4,
+        name: 'SQL',
+        href: '#',
+        imageSrc: '/images/sql.png',
+        imageAlt: 'SQL.',
+    },
+    {
+        id: 5,
+        name: 'MUI',
+        href: '#',
+        imageSrc: '/images/mui.png',
+        imageAlt: 'MUI.',
+    },
+    {
+        id: 6,
+        name: 'Tailwind',
+        href: '#',
+        imageSrc: '/images/icon-tailwind.png',
+        imageAlt: 'tailwind.',
+    },
+
+    {
+        id: 9,
+        name: 'Sequelize',
+        href: '#',
+        imageSrc: '/images/sequelize.png',
+        imageAlt: 'Sequelize.',
+    },
+    {
+        id: 10,
+        name: 'NodeJs',
+        href: '#',
+        imageSrc: '/images/nodejs.svg',
+        imageAlt: 'NodeJs.',
+    },
+    {
+        id: 11,
+        name: 'MongoDb',
+        href: '#',
+        imageSrc: '/images/mongodb.png',
+        imageAlt: 'mongodb.',
+    },
+    {
+        id: 12,
+        name: 'PostgreSql',
+        href: '#',
+        imageSrc: '/images/postgresql.png',
+        imageAlt: 'PostgreSql.',
+    },
+
+    {
+        id: 12,
+        name: 'Postman',
+        href: '#',
+        imageSrc: '/images/postman.png',
+        imageAlt: 'postman.png.',
+    },
+
+    {
+        id: 12,
+        name: 'Vercel',
+        href: '#',
+        imageSrc: '/images/vercel.png',
+        imageAlt: 'vercel.png.',
+    },
+    {
+        id: 13,
+        name: 'GitHub',
+        href: '#',
+        imageSrc: '/images/github.png',
+        imageAlt: 'github.',
+    },
+
+]
+
+
+export default function Skills() {
+    return (
+        <div className="relative overflow-hidden bg-gray-900 ">
+            <div className="pt-6 pb-80 sm:pt-6 sm:pb-40 lg:pt-6 lg:pb-48 ">
+                <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8 ">
+                    <div className="sm:max-w-lg">
+                        <div className="flex flex-row">
+                            <h1 className=" whitespace-nowrap w-[22ch] font text-4xl font-bold tracking-tight text-orange-200 sm:text-4xl">
+                                HABILIDADES TÉCNICAS</h1>
+                        </div>
+
+                        <h1 className="font text-3xl font-bold tracking-tight text-orange-200 sm:text-3xl">
+                            (TECH SKILLS)
+                        </h1>
+
+                    </div>
+                    <div>
+                        <div className="mt-4 mb-4">
+                            {/* Decorative image grid */}
+                            <div className="mx-auto max-w-2xl py-2 px-4 sm:py-2 sm:px-2 lg:max-w-7xl lg:px-2">
+                                <h2 className="sr-only">skills</h2>
+
+                                <div className=" grid grid-cols-4 gap-y-10 gap-x-6  sm:grid-cols-6 lg:grid-cols-8 xl:grid-cols-8 xl:gap-x-8">
+                                    {skills.map((product) => (
+                                        <a key={product.id} href={product.href} className="group">
+                                            <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-900  xl:aspect-w-7 xl:aspect-h-8">
+                                                <img
+                                                    src={product.imageSrc}
+                                                    alt={product.imageAlt}
+                                                    className="h-full w-full object-cover object-center group-hover:opacity-75"
+                                                />
+                                            </div>
+                                            <h3 className="mt-4 text-sm text-orange-200 text-center">{product.name}</h3>
+
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}

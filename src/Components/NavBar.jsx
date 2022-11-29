@@ -1,28 +1,67 @@
+import React, { useEffect } from 'react'
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useNavigate } from 'react-router-dom'
 
-const navigation = [
-    { name: 'Home', href: '/', current: true },
-    { name: 'By Me', href: '/byme', current: false },
-    { name: 'Projects', href: '/projects', current: false },
-    { name: 'Contact', href: '/contact', current: false },
-]
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
-
+let i = 0
+let j = 0
+let nameant = ''
+let hrefant = ''
+let name = ''
+let href = ''
+let navig = []
 export default function NavBar() {
+    const navigate = useNavigate();
+
+    const [navigation, setNavigation] = React.useState([
+        { id: 1, name: "Home", href: '/', current: true },
+        { id: 2, name: "Sobre mí", href: '/about', current: false },
+        { id: 3, name: "Skills", href: '/skills', current: false },
+        { id: 4, name: "Proyectos", href: '/projects', current: false },
+        { id: 5, name: "Contacto", href: '/contact', current: false },
+    ])
+
+    const onClickMenu = (e) => {
+        e.preventDefault()
+        console.log(e.currentTarget.text, e.currentTarget)
+        nameant = name
+        hrefant = href
+        name = e.currentTarget?.text.toString()
+        href = e.currentTarget?.href.toString()
+
+        j = i
+        i = navigation.findIndex((e) => e.name === name)
+
+        if (i > -1) {
+            if (j !== i) {
+                navig = navigation
+                navig[i].current = true
+                navig[j].current = false
+                setNavigation([...navig])
+            }
+            navigate(navig[i].href);
+        }
+
+    }
+
+    useEffect(() => {
+        console.log(navigation)
+    }, [navigation])
+
     return (
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className=" bg-gray-800">
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
-                                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-orange-200 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
                                         <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -46,26 +85,32 @@ export default function NavBar() {
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
-                                        {navigation.map((item) => (
-                                            <a
-                                                key={item.name}
-                                                href={item.href}
-                                                className={classNames(
-                                                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                                    'px-3 py-2 rounded-md text-sm font-medium'
-                                                )}
-                                                aria-current={item.current ? 'page' : undefined}
-                                            >
-                                                {item.name}
-                                            </a>
-                                        ))}
+                                        {(navigation.length > 0) ?
+
+                                            navigation?.map((item) => (
+                                                <a
+                                                    onClick={(e) => onClickMenu(e)}
+                                                    name={item.name}
+                                                    key={item.name}
+                                                    href={item.href}
+                                                    className={classNames(
+                                                        item.current ? 'bg-gray-900 text-orange-200' : 'text-orange-200 hover:bg-gray-700 hover:text-white',
+                                                        'px-3 py-2 rounded-md text-sm font-medium'
+                                                    )}
+                                                    aria-current={item.current ? 'page' : undefined}
+                                                >
+                                                    {item.name}
+                                                </a>
+                                            ))
+                                            : null
+                                        }
                                     </div>
                                 </div>
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <button
                                     type="button"
-                                    className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                    className="rounded-full bg-gray-800 p-1 text-orange-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                                 >
                                     <span className="sr-only">View notifications</span>
                                     <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -96,10 +141,30 @@ export default function NavBar() {
                                             <Menu.Item>
                                                 {({ active }) => (
                                                     <a
-                                                        href="/byme"
+                                                        href="/"
                                                         className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                                                     >
-                                                        By Me
+                                                        Home
+                                                    </a>
+                                                )}
+                                            </Menu.Item>
+                                            <Menu.Item>
+                                                {({ active }) => (
+                                                    <a
+                                                        href="/about"
+                                                        className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                                                    >
+                                                        About
+                                                    </a>
+                                                )}
+                                            </Menu.Item>
+                                            <Menu.Item>
+                                                {({ active }) => (
+                                                    <a
+                                                        href="/skills"
+                                                        className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                                                    >
+                                                        Skills
                                                     </a>
                                                 )}
                                             </Menu.Item>
@@ -138,7 +203,7 @@ export default function NavBar() {
                                     as="a"
                                     href={item.href}
                                     className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                        item.current ? 'bg-gray-900 text-orange-200' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                                         'block px-3 py-2 rounded-md text-base font-medium'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}

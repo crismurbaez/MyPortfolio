@@ -5,37 +5,21 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        crisbrown: {
-          50: '#f2f2d2',
-          100: '#e6e5bc',
-          150: '#d9d9a9',
-          200: '#cdcc96',
-          300: '#b3b375',
-          400: '#999a5b',
-          500: '#7f8146',
-          600: '#666834',
-          700: '#4d4e25',
-          800: '#343518',
-          900: '#1b1c0c',
-          1000: '#020301',
+      animation: {
+        escribiendo: 'escribiendo 2s steps(30) infinite',
+        parpadeo: '0.5s parpadeo infinite',
+      },
+      keyframes: {
+        escribiendo: {
+          'from': { width: '0' },
         },
-        crispink: {
-          50: '#f3c9d0',
-          100: '#e6afb7',
-          150: '#da979f',
-          200: '#cd8089',
-          300: '#b45b63',
-          400: '#9b3f45',
-          500: '#822b2f',
-          600: '#691c1f',
-          700: '#501214',
-          800: '#370b0c',
-          900: '#1e0506',
-          1000: '#050101',
+        parpadeo: {
+          '50%': { opacity: '0' },
         },
       },
-    },
-    plugins: [],
+      plugins: [
+        require('@tailwindcss/aspect-ratio'),
+      ],
+    }
   }
 }
