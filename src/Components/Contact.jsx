@@ -1,18 +1,34 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+
+import emailjs from '@emailjs/browser';
+
 export default function Contact() {
+
+    const enviarMail = (e) => {
+        e.preventDefault()
+        console.log(e.target.name.value)
+        console.log(e.target.mail.value)
+        console.log(e.target.asunto.value)
+        console.log(e.target.mensaje.value)
+
+        const templateParams = {
+            name: e.target.name.value,
+            mail: e.target.mail.value,
+            asunto: e.target.asunto.value,
+            mensaje: e.target.mensaje.value,
+        };
+
+        emailjs.send(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, templateParams, process.env.REACT_APP_YOUR_PUBLIC_KEY)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+            }, (err) => {
+                console.log('FAILED...', err);
+            });
+
+    }
+
+
+
+
     return (
         <div className="bg-gray-900 h-full w-full">
             <div className="bg-gray-900 h-full w-full">
@@ -26,20 +42,20 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="mt-2  md:m-1 bg-gray-900">
-                        <form action="#" method="POST">
+                        <form onSubmit={enviarMail}>
                             <div className="m-10 shadow sm:overflow-hidden sm:rounded-md bg-gray-900">
                                 <div className="  space-y-6 bg-orange-200 px-4 py-5 sm:p-6">
                                     <div className="grid grid-cols-3 gap-6">
                                         <div className="col-span-3 sm:col-span-2">
-                                            <label htmlFor="company-website" className="block text-sm font-medium text-gray-900">
+                                            <label htmlFor="name" className="block text-sm font-medium text-gray-900">
                                                 Nombre
                                             </label>
                                             <div className="mt-1 flex rounded-md shadow-sm">
 
                                                 <input
                                                     type="text"
-                                                    name="company-website"
-                                                    id="company-website"
+                                                    name="name"
+                                                    id="name"
                                                     className=" p-2 block w-full flex-1 rounded-md border-gray-300 focus:border-gray-900 focus:ring-gray-900 sm:text-sm"
                                                     placeholder="Nombre"
                                                 />
@@ -48,14 +64,13 @@ export default function Contact() {
                                     </div>
 
                                     <div>
-                                        <label htmlFor="about" className="block text-sm font-medium text-gray-900">
+                                        <label htmlFor="mail" className="block text-sm font-medium text-gray-900">
                                             E-mail
                                         </label>
                                         <div className="mt-1">
                                             <textarea
-                                                id="about"
-                                                name="about"
-                                                rows={3}
+                                                id="mail"
+                                                name="mail"
                                                 className="p-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900 sm:text-sm"
                                                 placeholder="you@example.com"
                                                 defaultValue={''}
@@ -65,13 +80,13 @@ export default function Contact() {
                                     </div>
 
                                     <div>
-                                        <label htmlFor="about" className="block text-sm font-medium text-gray-900">
+                                        <label htmlFor="asunto" className="block text-sm font-medium text-gray-900">
                                             Asunto
                                         </label>
                                         <div className="mt-1">
                                             <textarea
-                                                id="about"
-                                                name="about"
+                                                id="asunto"
+                                                name="asunto"
                                                 rows={3}
                                                 className="p-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900 sm:text-sm"
                                                 placeholder="asunto"
@@ -82,13 +97,13 @@ export default function Contact() {
                                     </div>
 
                                     <div>
-                                        <label htmlFor="about" className="block text-sm font-medium text-gray-900">
+                                        <label htmlFor="mensaje" className="block text-sm font-medium text-gray-900">
                                             Mensaje
                                         </label>
                                         <div className="mt-1">
                                             <textarea
-                                                id="about"
-                                                name="about"
+                                                id="mensaje"
+                                                name="mensaje"
                                                 rows={3}
                                                 className="p-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900 sm:text-sm"
                                                 placeholder="mensaje"
