@@ -24,7 +24,7 @@ const projects = [
     {
         id: 2,
         name: 'FULL STACK WEB DEVELOPER – Proyecto Final',
-        href: '#',
+        href: 'https://clothes-4-crew.vercel.app/',
         imageSrc: '/images/Clothes1.png',
         imageAlt: "PI.",
         detail: "Diseño y desarrollo de E-commerce 'Clothes4Crew' para la compra de ropa y accesorios. Se desarrolló de manera colaborativa con reuniones diarias y realizando sprints semanales a un product owner.Catálogo de productos, login de usuarios, carrito de compras, checkout de la orden, dashboard de admin para carga y edición de productos, pasarela de pago, entre otras. Se implementaron metodologías ágiles SCRUM y control de versiones con Github",
@@ -32,7 +32,7 @@ const projects = [
     {
         id: 3,
         name: 'PORTFOLIO',
-        href: '#',
+        href: 'https://my-portfolio-e1x70tpw5-crismurbaez.vercel.app/projects',
         imageSrc: '/images/Portfolio.png',
         imageAlt: "Portfolio.",
         detail: "Mi portafolio web personal, donde te cuento un poco sobre mí, las habilidades técnicas que he adquirido y los proyectos desarrollados. .",
