@@ -35,7 +35,7 @@ const projects = [
         href: 'https://my-portfolio-sigma-ashy.vercel.app/',
         imageSrc: '/images/Portfolio.png',
         imageAlt: "Portfolio.",
-        detail: "Mi portafolio web personal, donde te cuento un poco sobre mí, las habilidades técnicas que he adquirido y los proyectos desarrollados. .",
+        detail: "Mi portafolio web personal, donde te cuento un poco sobre mí, las habilidades técnicas que he adquirido y los proyectos desarrollados.",
     },
 
 ]
