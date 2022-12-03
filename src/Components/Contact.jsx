@@ -51,9 +51,39 @@ export default function Contact() {
                 <div className=" bg-gray-900 ">
                     <div className=" bg-gray-900">
                         <div className=" px-4 sm:px-0  bg-gray-900">
+                            <h2 className="text-6xl font-bold tracking-tight text-orange-200 px-14">Contacto</h2>
                             <h3 className="text-lg font-medium leading-6 text-gray-900">Contacto</h3>
+                            <div className='flex flex-row'>
+                                <p className=" px-14 text-sm  text-orange-200">
+                                    Puedes encontrarme en:
+                                </p>
+                                <div className=' bg-orange-200  m-3 rounded-full w-10'>
+                                    <a href="https://github.com/crismurbaez">
+                                        <img
+
+                                            src="/images/github.png"
+                                            alt='img github'
+                                            className=" w-10"
+
+                                        />
+                                    </a>
+                                </div>
+                                <div className=' bg-orange-200  m-3 rounded-lg p-1'>
+                                    <a href="https://www.linkedin.com/in/cristina-murguia/">
+                                        <img
+
+                                            src="/images/Linkedin.png"
+                                            alt='img linkedin'
+                                            className=" h-8"
+
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+
+
                             <p className=" px-14 text-sm  text-orange-200">
-                                Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.
+                                También puedes completar el siguiente formulario y me pondré en contacto contigo lo antes posible.
                             </p>
                         </div>
                     </div>
