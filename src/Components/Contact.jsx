@@ -53,11 +53,11 @@ export default function Contact() {
                         <div className=" px-4 sm:px-0  bg-gray-900">
                             <h2 className="text-6xl font-bold tracking-tight text-orange-200 px-14">Contacto</h2>
                             <h3 className="text-lg font-medium leading-6 text-gray-900">Contacto</h3>
-                            <div className='flex flex-row'>
+                            <div className='flex flex-col sm:flex-row'>
                                 <p className=" px-14 text-sm  text-orange-200">
                                     Puedes encontrarme en:
                                 </p>
-                                <div className=' bg-orange-200  m-3 rounded-full w-10'>
+                                <div className=' bg-orange-200  my-3 rounded-full w-10 mx-14 sm:mx-3'>
                                     <a href="https://github.com/crismurbaez">
                                         <img
 
@@ -68,13 +68,13 @@ export default function Contact() {
                                         />
                                     </a>
                                 </div>
-                                <div className=' bg-orange-200  m-3 rounded-lg p-1'>
+                                <div className=' bg-orange-200  my-3  rounded-lg p-1 w-24  mx-14 sm:mx-3'>
                                     <a href="https://www.linkedin.com/in/cristina-murguia/">
                                         <img
 
                                             src="/images/Linkedin.png"
                                             alt='img linkedin'
-                                            className=" h-8"
+                                            className=" h-8 "
 
                                         />
                                     </a>
