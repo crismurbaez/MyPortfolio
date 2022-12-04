@@ -12,34 +12,41 @@ export default function Contact() {
         console.log(e.target.mensaje.value)
 
         const templateParams = {
-            name: e.target.name.value,
-            mail: e.target.mail.value,
-            asunto: e.target.asunto.value,
-            mensaje: e.target.mensaje.value,
+            name: e.target.name.value.trim(),
+            mail: e.target.mail.value.trim(),
+            asunto: e.target.asunto.value.trim(),
+            mensaje: e.target.mensaje.value.trim(),
         };
 
-        emailjs.send(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, templateParams, process.env.REACT_APP_YOUR_PUBLIC_KEY)
-            .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: 'El mensaje se ha enviado correctamente!!',
-                    showConfirmButton: false,
-                    timer: 1500
-                })
-            }, (err) => {
-                console.log('FAILED...', err);
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'error',
-                    title: 'Ocurrió un error al enviar el mensaje!!',
-                    showConfirmButton: false,
-                    timer: 1500
-                })
-            });
-
-
+        if (templateParams.name === '' || templateParams.mail === '' || templateParams.asunto === '' || templateParams.mensaje === '') {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Debes completar todos los campos!',
+                footer: ''
+            })
+        } else {
+            emailjs.send(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, templateParams, process.env.REACT_APP_YOUR_PUBLIC_KEY)
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'El mensaje se ha enviado correctamente!!',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }, (err) => {
+                    console.log('FAILED...', err);
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'error',
+                        title: 'Ocurrió un error al enviar el mensaje!!',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                });
+        }
     }
 
 
