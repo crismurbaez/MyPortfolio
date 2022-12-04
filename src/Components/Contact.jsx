@@ -1,21 +1,40 @@
 
+import { React, useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
 
 export default function Contact() {
 
+    const [input, setInput] = useState({
+        name: "",
+        mail: "",
+        asunto: "",
+        mensaje: "",
+    });
+
+    const onHandleChange = (e) => {
+        console.log(e.target.name)
+        console.log(e.target.value)
+        setInput({
+            ...input,
+            [e.target.name]: e.target.value,
+        });
+        // setErrors(
+        //     validate({
+        //         ...input,
+        //         [e.target.name]: e.target.value,
+        //     })
+        // );
+    };
+
     const enviarMail = (e) => {
         e.preventDefault()
-        console.log(e.target.name.value)
-        console.log(e.target.mail.value)
-        console.log(e.target.asunto.value)
-        console.log(e.target.mensaje.value)
 
         const templateParams = {
-            name: e.target.name.value.trim(),
-            mail: e.target.mail.value.trim(),
-            asunto: e.target.asunto.value.trim(),
-            mensaje: e.target.mensaje.value.trim(),
+            name: input.name.trim(),
+            mail: input.mail.trim(),
+            asunto: input.asunto.trim(),
+            mensaje: input.mensaje.trim(),
         };
 
         if (templateParams.name === '' || templateParams.mail === '' || templateParams.asunto === '' || templateParams.mensaje === '') {
@@ -24,6 +43,12 @@ export default function Contact() {
                 title: 'Oops...',
                 text: 'Debes completar todos los campos!',
                 footer: ''
+            })
+            setInput({
+                name: input.name.trim(),
+                mail: input.mail.trim(),
+                asunto: input.asunto.trim(),
+                mensaje: input.mensaje.trim(),
             })
         } else {
             emailjs.send(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, templateParams, process.env.REACT_APP_YOUR_PUBLIC_KEY)
@@ -36,6 +61,12 @@ export default function Contact() {
                         showConfirmButton: false,
                         timer: 1500
                     })
+                    setInput({
+                        name: "",
+                        mail: "",
+                        asunto: "",
+                        mensaje: "",
+                    })
                 }, (err) => {
                     console.log('FAILED...', err);
                     Swal.fire({
@@ -43,7 +74,8 @@ export default function Contact() {
                         icon: 'error',
                         title: 'Ocurrió un error al enviar el mensaje!!',
                         showConfirmButton: false,
-                        timer: 1500
+                        timer: 2500,
+                        footer: 'Prueba enviarlo nuevamente dentro de unos minutos'
                     })
                 });
         }
@@ -108,6 +140,8 @@ export default function Contact() {
                                                 <input
                                                     type="text"
                                                     name="name"
+                                                    onChange={onHandleChange}
+                                                    value={input.name}
                                                     id="name"
                                                     className=" p-2 block w-full flex-1 rounded-md border-gray-300 focus:border-gray-900 focus:ring-gray-900 sm:text-sm"
                                                     placeholder="Nombre"
@@ -124,9 +158,11 @@ export default function Contact() {
                                             <textarea
                                                 id="mail"
                                                 name="mail"
+                                                onChange={onHandleChange}
+                                                value={input.mail}
+                                                rows={1}
                                                 className="p-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900 sm:text-sm"
                                                 placeholder="you@example.com"
-                                                defaultValue={''}
                                             />
                                         </div>
 
@@ -140,10 +176,11 @@ export default function Contact() {
                                             <textarea
                                                 id="asunto"
                                                 name="asunto"
-                                                rows={3}
+                                                onChange={onHandleChange}
+                                                value={input.asunto}
+                                                rows={1}
                                                 className="p-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900 sm:text-sm"
                                                 placeholder="asunto"
-                                                defaultValue={''}
                                             />
                                         </div>
 
@@ -157,10 +194,11 @@ export default function Contact() {
                                             <textarea
                                                 id="mensaje"
                                                 name="mensaje"
-                                                rows={3}
+                                                onChange={onHandleChange}
+                                                value={input.mensaje}
+                                                rows={10}
                                                 className="p-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900 sm:text-sm"
                                                 placeholder="mensaje"
-                                                defaultValue={''}
                                             />
                                         </div>
 
