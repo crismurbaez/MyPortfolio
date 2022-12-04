@@ -85,7 +85,7 @@ export default function Contact() {
 
 
     return (
-        <div className="bg-gray-900 h-screen w-full">
+        <div className="bg-gray-900 ">
             <div className="bg-gray-900 h-full w-full">
                 <div className=" bg-gray-900 ">
                     <div className=" bg-gray-900">

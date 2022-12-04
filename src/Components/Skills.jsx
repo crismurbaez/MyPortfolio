@@ -122,37 +122,37 @@ const skills = [
 
 export default function Skills() {
     return (
-        <div className=" bg-gray-900 h-screen">
-            <div className="pt-6 pb-80 sm:pt-6 sm:pb-40 lg:pt-6 lg:pb-48 ">
-                <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8 ">
-                    <div className="sm:max-w-lg">
-                        <div className="flex flex-row">
-                            <h1 className=" whitespace-nowrap w-[22ch] font text-4xl font-bold tracking-tight text-orange-200 sm:text-4xl">
+        <div className=" bg-gray-900 ">
+            <div className="bg-gray-900 pt-6 pb-80 sm:pt-6 sm:pb-40 lg:pt-6 lg:pb-48 ">
+                <div className="bg-gray-900 relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8 ">
+                    <div className="bg-gray-900 sm:max-w-lg">
+                        <div className="bg-gray-900 flex flex-row">
+                            <h1 className="bg-gray-900 whitespace-nowrap w-[22ch] font text-4xl font-bold tracking-tight text-orange-200 sm:text-4xl">
                                 HABILIDADES TÉCNICAS</h1>
                         </div>
 
-                        <h1 className="font text-3xl font-bold tracking-tight text-orange-200 sm:text-3xl">
+                        <h1 className="bg-gray-900 font text-3xl font-bold tracking-tight text-orange-200 sm:text-3xl">
                             (TECH SKILLS)
                         </h1>
 
                     </div>
                     <div>
-                        <div className="mt-4 mb-4">
+                        <div className="bg-gray-900 mt-4 mb-4">
                             {/* Decorative image grid */}
-                            <div className="mx-auto max-w-2xl py-2 px-4 sm:py-2 sm:px-2 lg:max-w-7xl lg:px-2">
+                            <div className="bg-gray-900 mx-auto max-w-2xl py-2 px-4 sm:py-2 sm:px-2 lg:max-w-7xl lg:px-2">
                                 <h2 className="sr-only">skills</h2>
 
-                                <div className=" grid grid-cols-4 gap-y-10 gap-x-6  sm:grid-cols-6 lg:grid-cols-8 xl:grid-cols-8 xl:gap-x-8">
+                                <div className="bg-gray-900 grid grid-cols-4 gap-y-10 gap-x-6  sm:grid-cols-6 lg:grid-cols-8 xl:grid-cols-8 xl:gap-x-8">
                                     {skills.map((product) => (
-                                        <a key={product.id} href={product.href} className="group">
-                                            <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-900  xl:aspect-w-7 xl:aspect-h-8">
+                                        <a key={product.id} href={product.href} className="bg-gray-900 group">
+                                            <div className="bg-gray-900 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg  xl:aspect-w-7 xl:aspect-h-8">
                                                 <img
                                                     src={product.imageSrc}
                                                     alt={product.imageAlt}
-                                                    className="h-full w-full object-cover object-center group-hover:opacity-75"
+                                                    className="bg-gray-900 h-full w-full object-cover object-center group-hover:opacity-75"
                                                 />
                                             </div>
-                                            <h3 className="mt-4 text-sm text-orange-200 text-center">{product.name}</h3>
+                                            <h3 className="bg-gray-900 mt-4 text-sm text-orange-200 text-center">{product.name}</h3>
 
                                         </a>
                                     ))}
