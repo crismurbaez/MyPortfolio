@@ -196,7 +196,7 @@ export default function Contact() {
                                                 name="mensaje"
                                                 onChange={onHandleChange}
                                                 value={input.mensaje}
-                                                rows={10}
+                                                rows={4}
                                                 className="p-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-900 focus:ring-gray-900 sm:text-sm"
                                                 placeholder="mensaje"
                                             />
