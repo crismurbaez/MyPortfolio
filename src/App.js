@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 // import './App.css';
 import NavBar from '../src/Components/NavBar'
@@ -7,19 +7,30 @@ import About from './Components/About'
 import Skills from './Components/Skills'
 import Contact from './Components/Contact'
 import Projects from './Components/Projects'
+import { useNavigate } from 'react-router-dom'
 
-
+let i = 0
 export default function App() {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (i === 0) {
+            navigate('/home')
+            i = i + 1
+        }
+    }, [])
+
     return (
         <div>
             <NavBar />
             <Routes>
-                <Route path='/' element={<Home />} />
+                <Route path='/home' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/skills' element={<Skills />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/projects' element={<Projects />} />
             </Routes>
+
         </div>
     )
 }

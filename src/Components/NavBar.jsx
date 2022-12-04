@@ -19,7 +19,7 @@ export default function NavBar() {
     const navigate = useNavigate();
 
     const [navigation, setNavigation] = React.useState([
-        { id: 1, name: "Home", href: '/', current: true },
+        { id: 1, name: "Home", href: '/home', current: true },
         { id: 2, name: "Sobre mí", href: '/about', current: false },
         { id: 3, name: "Skills", href: '/skills', current: false },
         { id: 4, name: "Proyectos", href: '/projects', current: false },

@@ -2,7 +2,7 @@ export default function Home() {
 
 
     return (
-        <div className=" bg-gray-900 ">
+        <div className=" bg-gray-900 h-screen">
             <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
                 <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                     <div className="sm:max-w-lg">
