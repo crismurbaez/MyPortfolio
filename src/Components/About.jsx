@@ -32,7 +32,7 @@ export default function About() {
                         ))}
                     </dl>
                 </div>
-                <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8 ">
                     <img
                         src="/images/matematica4.jpg"
                         alt="pluma."

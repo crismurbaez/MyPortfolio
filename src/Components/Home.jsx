@@ -1,4 +1,9 @@
 export default function Home() {
+
+    const handleOnClickCV = () => {
+
+    }
+
     return (
         <div className="relative overflow-hidden bg-gray-900 h-full w-full">
             <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
@@ -17,6 +22,14 @@ export default function Home() {
                             👋 Hola!! Bienvenidos a mi portfolio...
                             Recorran todos los apartados y luego envíenme un mensaje, para conversar con mayor profundidad. Saludos!!
                         </p>
+                        <p className="mt-6">
+                            <a className="rounded-xl p-2 bg-orange-200 text-gray-900" href="https://drive.google.com/file/d/1H8vkT84D_9J4inX8WFtSUOrF4zrFgQ0S/view?usp=share_link">
+                                Descarga mi CV
+                            </a>
+                        </p>
+
+
+
                     </div>
                     <div>
                         <div className="mt-10 mb-10 h-full w-full">

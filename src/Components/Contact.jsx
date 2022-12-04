@@ -55,7 +55,7 @@ export default function Contact() {
                             <h3 className="text-lg font-medium leading-6 text-gray-900">Contacto</h3>
                             <div className='flex flex-col sm:flex-row'>
                                 <p className=" px-14 text-sm  text-orange-200">
-                                    Puedes encontrarme en:
+                                    Me encuentras en:
                                 </p>
                                 <div className=' bg-orange-200  my-3 rounded-full w-10 mx-14 sm:mx-3'>
                                     <a href="https://github.com/crismurbaez">
@@ -83,7 +83,7 @@ export default function Contact() {
 
 
                             <p className=" px-14 text-sm  text-orange-200">
-                                También puedes completar el siguiente formulario y me pondré en contacto contigo lo antes posible.
+                                Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.
                             </p>
                         </div>
                     </div>
