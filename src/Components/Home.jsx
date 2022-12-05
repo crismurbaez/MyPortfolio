@@ -29,7 +29,7 @@ export default function Home() {
 
                     </div>
                     <div>
-                        <div className="mt-10 pb-28 mb-10 h-full w-full">
+                        <div className="mt-10 pb-28 pr-24  mb-10 h-full w-full">
                             {/* Decorative image grid */}
                             <div
                                 aria-hidden="true"
