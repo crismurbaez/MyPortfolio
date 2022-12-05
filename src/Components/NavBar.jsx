@@ -28,10 +28,10 @@ export default function NavBar() {
         { id: 5, name: "Contacto", href: '/contact', current: false },
     ])
 
-    const onClickMenu = (e, open) => {
+    const onClickMenu = (e) => {
         e.preventDefault()
 
-        console.log(e.currentTarget.text, e.currentTarget)
+        console.log(e.currentTarget.text, e.currentTarget.href)
         nameant = name
         hrefant = href
         name = e.currentTarget?.text.toString()
@@ -49,7 +49,7 @@ export default function NavBar() {
             }
             navigate(navig[i].href);
         }
-        open = false
+
     }
 
     useEffect(() => {
@@ -199,24 +199,30 @@ export default function NavBar() {
                     </div>
 
                     <Disclosure.Panel className="sm:hidden">
-                        <div className="space-y-1 px-2 pt-2 pb-3">
-                            {navigation?.map((item) => (
-                                <Disclosure.Button
-                                    onClick={(e, open) => onClickMenu(e, open)}
-                                    key={item.name}
-                                    as="a"
-                                    href={item.href}
-                                    className={classNames(
-                                        item.current ? 'bg-gray-900 text-orange-200' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                        'block px-3 py-2 rounded-md text-base font-medium'
-                                    )}
-                                    aria-current={item.current ? 'page' : undefined}
-                                >
-                                    {item.name}
-                                    {console.log(open)}
-                                </Disclosure.Button>
-                            ))}
-                        </div>
+                        {({ close }) => (
+                            <div className="space-y-1 px-2 pt-2 pb-3">
+                                {navigation?.map((item) => (
+                                    <Disclosure.Button
+                                        onClick={(e,) => {
+                                            onClickMenu(e)
+                                            close()
+                                        }}
+                                        key={item.name}
+                                        as="a"
+                                        href={item.href}
+                                        className={classNames(
+                                            item.current ? 'bg-gray-900 text-orange-200' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                            'block px-3 py-2 rounded-md text-base font-medium'
+                                        )}
+                                        aria-current={item.current ? 'page' : undefined}
+                                    >
+                                        {item.name}
+                                        {console.log(open)}
+                                    </Disclosure.Button>
+                                ))}
+                            </div>
+                        )}
+
                     </Disclosure.Panel>
                 </>
             )}
