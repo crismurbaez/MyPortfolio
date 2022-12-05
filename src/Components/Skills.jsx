@@ -122,7 +122,7 @@ const skills = [
 
 export default function Skills() {
     return (
-        <div className=" bg-gray-900 ">
+        <div className=" bg-gray-900  min-h-screen max-h-full">
             <div className="bg-gray-900 pt-6 pb-80 sm:pt-6 sm:pb-40 lg:pt-6 lg:pb-48 ">
                 <div className="bg-gray-900 relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8 ">
                     <div className="bg-gray-900 sm:max-w-lg">

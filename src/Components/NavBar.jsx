@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { React, useState, useEffect } from "react";
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -18,7 +18,9 @@ let navig = []
 export default function NavBar() {
     const navigate = useNavigate();
 
-    const [navigation, setNavigation] = React.useState([
+    // const [open, setOpen] = useState(false)
+
+    const [navigation, setNavigation] = useState([
         { id: 1, name: "Home", href: '/home', current: true },
         { id: 2, name: "Sobre mí", href: '/about', current: false },
         { id: 3, name: "Skills", href: '/skills', current: false },
@@ -26,8 +28,9 @@ export default function NavBar() {
         { id: 5, name: "Contacto", href: '/contact', current: false },
     ])
 
-    const onClickMenu = (e) => {
+    const onClickMenu = (e, open) => {
         e.preventDefault()
+
         console.log(e.currentTarget.text, e.currentTarget)
         nameant = name
         hrefant = href
@@ -46,7 +49,7 @@ export default function NavBar() {
             }
             navigate(navig[i].href);
         }
-
+        open = false
     }
 
     useEffect(() => {
@@ -199,7 +202,7 @@ export default function NavBar() {
                         <div className="space-y-1 px-2 pt-2 pb-3">
                             {navigation?.map((item) => (
                                 <Disclosure.Button
-                                    // onClick={(e) => onClickMenu(e)}
+                                    onClick={(e, open) => onClickMenu(e, open)}
                                     key={item.name}
                                     as="a"
                                     href={item.href}
@@ -210,6 +213,7 @@ export default function NavBar() {
                                     aria-current={item.current ? 'page' : undefined}
                                 >
                                     {item.name}
+                                    {console.log(open)}
                                 </Disclosure.Button>
                             ))}
                         </div>

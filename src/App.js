@@ -8,6 +8,7 @@ import Skills from './Components/Skills'
 import Contact from './Components/Contact'
 import Projects from './Components/Projects'
 import { useNavigate } from 'react-router-dom'
+import Landing from './Components/Landing'
 
 let i = 0
 export default function App() {
@@ -21,9 +22,10 @@ export default function App() {
     }, [])
 
     return (
-        <div>
+        <div className='bg-gray-900 '>
             <NavBar />
             <Routes>
+                {/* <Route path='/' element={<Landing />} /> */}
                 <Route path='/home' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/skills' element={<Skills />} />

@@ -9,7 +9,7 @@ const softSkills = [
 
 export default function About() {
     return (
-        <div className="bg-gray-900">
+        <div className="bg-gray-900 min-h-screen max-h-full">
             <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-6 px-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
                 <div>
                     <h2 className="text-3xl font-bold tracking-tight text-orange-200 sm:text-4xl">Sobre mí...</h2>
