@@ -52,9 +52,6 @@ export default function NavBar() {
 
     }
 
-    useEffect(() => {
-        console.log(navigation)
-    }, [navigation])
 
     return (
         <Disclosure as="nav" className=" bg-gray-800">
@@ -217,7 +214,6 @@ export default function NavBar() {
                                         aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}
-                                        {console.log(open)}
                                     </Disclosure.Button>
                                 ))}
                             </div>
