@@ -2,7 +2,7 @@ export default function Home() {
 
 
     return (
-        <div className=" bg-gray-900 min-h-screen max-h-full min-w-fit max-w-full">
+        <div className=" bg-gray-900 min-h-screen max-h-full min-w-[100vh] max-w-full">
             <div className="pt-16 pb-96  sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
                 <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                     <div className="sm:max-w-lg">
@@ -12,10 +12,10 @@ export default function Home() {
                             </h1><span className="overflow-hidden animate-parpadeo font text-4xl font-['Elephant'] tracking-normal font-bold  text-orange-200 sm:text-5xl">|</span>
                         </div>
 
-                        <h1 className=" p-4 text-3xl max-w-full sm:max-w-full font-['Century-Gothic'] tracking-[.2em]  text-orange-200 sm:text-3xl">
+                        <h1 className=" p-4 text-3xl max-w-[300px] sm:max-w-full font-['Century-Gothic'] tracking-[.2em]  text-orange-200 sm:text-3xl">
                             Full stack web developer
                         </h1>
-                        <p className="mt-4 mr-2 text-xl max-w-full sm:max-w-full text-orange-200 text-justify">
+                        <p className="mt-4 mr-2 text-xl max-w-[300px] sm:max-w-full text-orange-200 text-justify">
                             👋 Hola!! Bienvenidos a mi portfolio...
                             Recorran todos los apartados y luego envíenme un mensaje, para conversar con mayor profundidad. Saludos!!
                         </p>
