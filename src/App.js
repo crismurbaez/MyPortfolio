@@ -22,7 +22,7 @@ export default function App() {
     }, [])
 
     return (
-        <div className='bg-gray-900 '>
+        <div className='bg-gray-900 min-h-screen max-h-full min-w-fit max-w-full'>
             <NavBar />
             <Routes>
                 {/* <Route path='/' element={<Landing />} /> */}
