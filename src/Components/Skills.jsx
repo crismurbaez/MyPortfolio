@@ -127,12 +127,12 @@ export default function Skills() {
                 <div className="bg-gray-900 relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8 ">
                     <div className="bg-gray-900 sm:max-w-lg">
                         <div className="bg-gray-900 flex flex-row">
-                            <h1 className="bg-gray-900 whitespace-nowrap w-[22ch] font text-4xl font-bold tracking-tight text-orange-200 sm:text-4xl">
-                                HABILIDADES TÉCNICAS</h1>
+                            <h1 className="bg-gray-900 whitespace-nowrap w-[22ch] font text-3xl font-bold tracking-tight text-orange-200 sm:text-4xl">
+                                Habilidades técnicas</h1>
                         </div>
 
-                        <h1 className="bg-gray-900 font text-3xl font-bold tracking-tight text-orange-200 sm:text-3xl">
-                            (TECH SKILLS)
+                        <h1 className="bg-gray-900 font text-2xl font-bold tracking-tight text-orange-200 sm:text-3xl">
+                            (Tech Skills)
                         </h1>
 
                     </div>

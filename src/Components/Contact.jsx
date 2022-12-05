@@ -90,38 +90,41 @@ export default function Contact() {
                 <div className=" bg-gray-900  pb-20">
                     <div className=" bg-gray-900">
                         <div className=" px-4 sm:px-0 bg-gray-900">
-                            <h2 className="text-6xl font-bold tracking-tight text-orange-200 px-14">Contacto</h2>
+                            <h2 className="text-6xl font-bold tracking-tight text-orange-200 px-4">Contacto</h2>
                             <h3 className="text-lg font-medium leading-6 text-gray-900">Contacto</h3>
                             <div className='flex flex-col sm:flex-row'>
-                                <p className=" px-14 text-sm  text-orange-200">
+                                <p className=" px-4 text-sm  text-orange-200">
                                     Me encuentras en:
                                 </p>
-                                <div className=' bg-orange-200  my-3 rounded-full w-10 mx-14 sm:mx-3'>
-                                    <a href="https://github.com/crismurbaez">
-                                        <img
+                                <div className="flex justify-center items-center justify-items-center flex-col ">
+                                    <div className=' bg-orange-200  my-3 rounded-full w-10 mx-14 sm:mx-3'>
+                                        <a href="https://github.com/crismurbaez">
+                                            <img
 
-                                            src="/images/github.png"
-                                            alt='img github'
-                                            className=" w-10"
+                                                src="/images/github.png"
+                                                alt='img github'
+                                                className=" w-10"
 
-                                        />
-                                    </a>
+                                            />
+                                        </a>
+                                    </div>
+                                    <div className=' bg-orange-200  my-3  rounded-lg p-1 w-24  mx-14 sm:mx-3'>
+                                        <a href="https://www.linkedin.com/in/cristina-murguia/">
+                                            <img
+
+                                                src="/images/Linkedin.png"
+                                                alt='img linkedin'
+                                                className=" h-8 "
+
+                                            />
+                                        </a>
+                                    </div>
                                 </div>
-                                <div className=' bg-orange-200  my-3  rounded-lg p-1 w-24  mx-14 sm:mx-3'>
-                                    <a href="https://www.linkedin.com/in/cristina-murguia/">
-                                        <img
 
-                                            src="/images/Linkedin.png"
-                                            alt='img linkedin'
-                                            className=" h-8 "
-
-                                        />
-                                    </a>
-                                </div>
                             </div>
 
 
-                            <p className=" px-14 text-sm  text-orange-200">
+                            <p className=" px-4 text-sm  text-orange-200">
                                 Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.
                             </p>
                         </div>
