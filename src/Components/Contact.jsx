@@ -89,14 +89,14 @@ export default function Contact() {
             <div className="bg-gray-900 h-full w-full">
                 <div className=" bg-gray-900  pb-20">
                     <div className=" bg-gray-900">
-                        <div className=" px-4 sm:px-0 bg-gray-900">
+                        <div className=" px-4 sm:px-14 bg-gray-900">
                             <h2 className="text-6xl font-bold tracking-tight text-orange-200 px-4">Contacto</h2>
                             <h3 className="text-lg font-medium leading-6 text-gray-900">Contacto</h3>
                             <div className='flex flex-col sm:flex-row'>
                                 <p className=" px-4 text-sm  text-orange-200">
                                     Me encuentras en:
                                 </p>
-                                <div className="flex justify-center items-center justify-items-center flex-col ">
+                                <div className="flex justify-center items-center justify-items-center flex-col sm:flex-row ">
                                     <div className=' bg-orange-200  my-3 rounded-full w-10 mx-14 sm:mx-3'>
                                         <a href="https://github.com/crismurbaez">
                                             <img
