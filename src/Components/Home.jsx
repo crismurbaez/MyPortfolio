@@ -7,7 +7,7 @@ export default function Home() {
                 <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                     <div className="sm:max-w-lg">
                         <div className="flex flex-row">
-                            <h1 className="whitespace-nowrap p-1  w-[12ch] overflow-hidden animate-escribiendo font text-4xl font-['Elephant'] tracking-normal   text-orange-200 sm:w-[25ch] sm:text-5xl">
+                            <h1 className="whitespace-nowrap p-1  w-[20ch] overflow-hidden animate-escribiendo font text-2xl font-['Elephant'] tracking-normal   text-orange-200 sm:w-[25ch] sm:text-5xl">
                                 Cristina Murguía
                             </h1><span className="overflow-hidden animate-parpadeo font text-4xl font-['Elephant'] tracking-normal font-bold  text-orange-200 sm:text-5xl">|</span>
                         </div>

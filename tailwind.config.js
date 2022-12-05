@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        escribiendo: 'escribiendo 2s steps(30) infinite',
+        escribiendo: 'escribiendo 3s steps(60) infinite',
         parpadeo: '0.5s parpadeo infinite',
       },
       keyframes: {
