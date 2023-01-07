@@ -4,7 +4,7 @@ const projects = [
     {
         id: 1,
         name: 'FULL STACK WEB DEVELOPER – Proyecto Individual',
-        href: 'https://youtu.be/bg-3NY2NMLA',
+        href: 'https://www.youtube.com/watch?v=S9eVNDpX4xU',
         imageSrc: '/images/Food.png',
         imageAlt: "Proyecto Individual.",
         detail: "Diseño y desarrollo de una app de recetas de comidas utilizando React, Redux, CSS puro, Node.js, Express y Sequelize. En la aplicación se pueden ver  distintas recetas de comidas junto con información relevante de las mismas utilizando la api externa spoonacular. Tiene un proceso de filtrados y ordenamientos. Se pueden buscar recetas por su nombre. Y crear nuevas recetas.",
