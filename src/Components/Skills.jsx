@@ -79,14 +79,15 @@ const skills = [
         imageSrc: '/images/sql.png',
         imageAlt: 'SQL.',
     },
-
     {
-        id: 9,
-        name: 'Sequelize',
+        id: 12,
+        name: 'PostgreSql',
         href: '#',
-        imageSrc: '/images/sequelize.png',
-        imageAlt: 'Sequelize.',
+        imageSrc: '/images/postgresql.png',
+        imageAlt: 'PostgreSql.',
     },
+
+
     {
         id: 11,
         name: 'MongoDb',
@@ -95,11 +96,11 @@ const skills = [
         imageAlt: 'mongodb.',
     },
     {
-        id: 12,
-        name: 'PostgreSql',
+        id: 9,
+        name: 'Sequelize',
         href: '#',
-        imageSrc: '/images/postgresql.png',
-        imageAlt: 'PostgreSql.',
+        imageSrc: '/images/sequelize.png',
+        imageAlt: 'Sequelize.',
     },
 
     {
