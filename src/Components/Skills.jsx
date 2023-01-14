@@ -57,13 +57,7 @@ const skills = [
         imageAlt: 'github.',
     },
 
-    {
-        id: 4,
-        name: 'SQL',
-        href: '#',
-        imageSrc: '/images/sql.png',
-        imageAlt: 'SQL.',
-    },
+
     {
         id: 5,
         name: 'MUI',
@@ -77,6 +71,13 @@ const skills = [
         href: '#',
         imageSrc: '/images/icon-tailwind.png',
         imageAlt: 'tailwind.',
+    },
+    {
+        id: 4,
+        name: 'SQL',
+        href: '#',
+        imageSrc: '/images/sql.png',
+        imageAlt: 'SQL.',
     },
 
     {
