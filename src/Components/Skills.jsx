@@ -21,6 +21,13 @@ const skills = [
         imageAlt: 'Java Script.',
     },
     {
+        id: 10,
+        name: 'NodeJs',
+        href: '#',
+        imageSrc: '/images/nodejs.png',
+        imageAlt: 'NodeJs.',
+    },
+    {
         id: 8,
         name: 'React',
         href: '#',
@@ -41,6 +48,13 @@ const skills = [
         href: '#',
         imageSrc: '/images/git.png',
         imageAlt: 'GIT.',
+    },
+    {
+        id: 13,
+        name: 'GitHub',
+        href: '#',
+        imageSrc: '/images/github.png',
+        imageAlt: 'github.',
     },
 
     {
@@ -73,13 +87,6 @@ const skills = [
         imageAlt: 'Sequelize.',
     },
     {
-        id: 10,
-        name: 'NodeJs',
-        href: '#',
-        imageSrc: '/images/nodejs.svg',
-        imageAlt: 'NodeJs.',
-    },
-    {
         id: 11,
         name: 'MongoDb',
         href: '#',
@@ -109,13 +116,7 @@ const skills = [
         imageSrc: '/images/vercel.png',
         imageAlt: 'vercel.png.',
     },
-    {
-        id: 13,
-        name: 'GitHub',
-        href: '#',
-        imageSrc: '/images/github.png',
-        imageAlt: 'github.',
-    },
+
 
 ]
 
