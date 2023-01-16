@@ -2,7 +2,7 @@ export default function Home() {
     // overflow-hidden min-h-screen max-h-full min-w-[100vh] max-w-full
 
     return (
-        <div className=" bg-gray-900 ">
+        <div className=" bg-gray-900 min-h-screen max-h-full">
             <div className="pt-16 pb-96  sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
                 <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                     <div className="sm:max-w-lg">
@@ -29,7 +29,7 @@ export default function Home() {
 
                     </div>
                     <div>
-                        <div className="mt-10 pb-28  mb-10 h-full w-full">
+                        <div className="mt-10 pb-28  mb-10 h-full w-full border-double border-orange-500">
                             {/* Decorative image grid */}
                             <div
                                 aria-hidden="true"
@@ -45,7 +45,7 @@ export default function Home() {
                                                     className="hover:animate-bounce h-full w-full  object-cover object-center "
                                                 />
                                             </div>
-                                            <div className=" w-20 sm:w-28 rotate-45 overflow-hidden rounded-lg">
+                                            <div className="  w-20 sm:w-28 rotate-45 overflow-hidden rounded-lg">
                                                 <img
                                                     src="/images/hoja3.png"
                                                     alt=""

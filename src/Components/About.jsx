@@ -14,7 +14,7 @@ export default function About() {
                 <div>
                     <h2 className="text-3xl font-bold tracking-tight text-orange-200 sm:text-4xl">Sobre mí...</h2>
                     <h2 className="text-2xl font-['Century-Gothic'] tracking-[.25em] text-orange-200 sm:text-4xl"> Cristina Murguía</h2>
-                    <p className="mt-4 text-orange-200 text-justify">
+                    <p className="mt-4 text-orange-200 text-justify ">
                         Te cuento un poco sobre mí. Soy Full Stack Web Developer con formación como Profesora de Matemática y Profesora de 1 y 2 EGB.
                         <br></br>
                         ✒Toda mi vida trabajé en el sector de educación, pasando desde el nivel primario, secundario, educación de adultos y trabajando también desde la gestión escolar como directora de un centro de nivel secundario.
@@ -22,7 +22,7 @@ export default function About() {
                         <br></br>
                         Aprendí a los 8 años con un curso y a partir de allí seguí aprendiendo de forma autodidacta. Hoy HENRY me dio la oportunidad de poder actualizarme y dominar las tecnologías más pedidas por el sector.
                     </p>
-                    <p className="mt-8 font-['Century-Gothic'] tracking-[.25em] text-orange-200">Soft Skills</p>
+                    <p className="mt-8 font-['Century-Gothic'] tracking-[.25em] text-orange-200 ">Soft Skills</p>
                     <dl className=" grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
                         {softSkills.map((feature) => (
                             <div key={feature.name} className="border-t border-gray-200 pt-4">
