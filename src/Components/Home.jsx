@@ -2,9 +2,9 @@ export default function Home() {
     // overflow-hidden min-h-screen max-h-full min-w-[100vh] max-w-full
 
     return (
-        <div className=" bg-gray-900 min-h-screen max-h-full">
+        <div className="bg-gray-900 min-w-full max-w-[100vw] min-h-screen max-h-full ">
             <div className="pt-16 pb-96  sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-                <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+                <div className="relative  mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                     <div className="sm:max-w-lg">
                         <div className="flex flex-row">
                             <h1 className="whitespace-nowrap p-1  w-[18ch] overflow-hidden animate-escribiendo font text-3xl font-['Elephant'] tracking-normal   text-orange-200 sm:w-[25ch] sm:text-5xl">
@@ -15,7 +15,7 @@ export default function Home() {
                         <h1 className=" p-4 text-3xl max-w-[300px] sm:max-w-full font-['Century-Gothic'] tracking-[.2em]  text-orange-200 sm:text-3xl">
                             Full stack web developer
                         </h1>
-                        <p className="mt-4 mr-2 text-xl max-w-[300px] sm:max-w-full text-orange-200 text-justify">
+                        <p className=" mt-4 mr-2 text-xl max-w-[300px] sm:max-w-full text-orange-200 text-justify">
                             👋 Hola!! Bienvenidos a mi portfolio...
                             Recorran todos los apartados y luego envíenme un mensaje, para conversar con mayor profundidad. Saludos!!
                         </p>
@@ -29,7 +29,7 @@ export default function Home() {
 
                     </div>
                     <div>
-                        <div className="mt-10 pb-28  mb-10 h-full w-full border-double border-orange-500">
+                        <div className="mt-10 pb-28 mb-12 h-full w-full">
                             {/* Decorative image grid */}
                             <div
                                 aria-hidden="true"
@@ -69,7 +69,7 @@ export default function Home() {
                                                     className="h-full w-full object-cover object-center"
                                                 />
                                             </div>
-                                            <div className=" w-44 rotate-45 overflow-hidden rounded-lg opacity-0 lg:opacity-100">
+                                            <div className=" w-28 sm:w-44 rotate-45 overflow-hidden rounded-lg lg:opacity-100">
                                                 <img
                                                     src="/images/hoja8.png"
                                                     alt=""
@@ -77,7 +77,7 @@ export default function Home() {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8 opacity-0 lg:opacity-100">
+                                        <div className=" hidden grid-none lg:grid flex-shrink-0 grid-cols-1 gap-y-0 lg:gap-y-8 opacity-0 lg:opacity-100">
                                             <div className=" w-32 overflow-hidden rounded-lg">
                                                 <img
                                                     src="/images/hoja7.png"

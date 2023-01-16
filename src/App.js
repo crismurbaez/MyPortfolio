@@ -10,6 +10,7 @@ import Projects from './Components/Projects'
 import { useNavigate } from 'react-router-dom'
 
 
+
 let i = 0
 export default function App() {
     const navigate = useNavigate();
@@ -22,7 +23,7 @@ export default function App() {
     }, [])
 
     return (
-        <div className='bg-gray-900'>
+        <div className='bg-gray-900 '>
             <NavBar />
             <Routes>
                 {/* <Route path='/' element={<Landing />} /> */}
