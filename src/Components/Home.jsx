@@ -33,19 +33,39 @@ export default function Home() {
                             {/* Decorative image grid */}
                             <div
                                 aria-hidden="true"
+                                // pointer-events-none  --> no permite que se active el hover
+                                //pointer-event-auto --> se activa el hover PERO no funciona bien el NAVBAR!!!!
                                 className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
                             >
                                 <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                                     <div className="flex items-center space-x-6 lg:space-x-8">
-                                        <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                                            <div className=" w-28 sm:w-44  overflow-hidden rounded-lg ">
+                                        <div className="grid  grid-cols-1 gap-y-6 lg:gap-y-8">
+                                            <div className="  w-28 sm:w-40 overflow-hidden rounded-lg
+                                            transition 
+                                            duration-1000
+                                            ease-in-out 
+                                            
+                                            transform 
+                                            hover:-translate-y-2 
+                                            hover:rotate-6 
+                                            hover:scale-125 
+                                            ">
                                                 <img
                                                     src="/images/hoja6.png"
                                                     alt=""
-                                                    className="hover:animate-bounce h-full w-full  object-cover object-center "
+                                                    className="h-full w-full object-cover object-center"
                                                 />
                                             </div>
-                                            <div className="  w-20 sm:w-28 rotate-45 overflow-hidden rounded-lg">
+                                            <div className="  w-20 sm:w-28 rotate-12 mt-8 ml-10 overflow-hidden rounded-lg
+                                            transition 
+                                            duration-1000
+                                            ease-in-out 
+                                            
+                                            transform 
+                                            hover:-translate-y-2 
+                                            hover:rotate-6 
+                                            hover:scale-125 
+                                            ">
                                                 <img
                                                     src="/images/hoja3.png"
                                                     alt=""
@@ -53,8 +73,17 @@ export default function Home() {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                                            <div className=" w-16 sm:w-24 rotate-180 overflow-hidden rounded-lg ">
+                                        <div className="grid  grid-cols-1 gap-y-6 lg:gap-y-8">
+                                            <div className=" w-16 sm:w-24 rotate-180 overflow-hidden rounded-lg 
+                                            transition 
+                                            duration-1000
+                                            ease-in-out 
+                                            
+                                            transform 
+                                            hover:-translate-y-2 
+                                            hover:rotate-[200deg]
+                                            hover:scale-125
+                                            ">
                                                 <img
                                                     src="/images/hoja5.png"
                                                     alt=""
@@ -62,14 +91,32 @@ export default function Home() {
                                                 />
 
                                             </div>
-                                            <div className=" w-36 sm:w-44 overflow-hidden rounded-lg hover:animate-spin">
+                                            <div className=" w-36 sm:w-44 overflow-hidden rounded-lg 
+                                             transition 
+                                             duration-1000
+                                             ease-in-out 
+                                             
+                                             transform 
+                                             hover:-translate-y-2 
+                                             hover:rotate-12
+                                             hover:scale-125 
+                                            ">
                                                 <img
                                                     src="/images/FlorGirasol.png"
                                                     alt=""
                                                     className="h-full w-full object-cover object-center"
                                                 />
                                             </div>
-                                            <div className=" w-28 sm:w-44 rotate-45 overflow-hidden rounded-lg lg:opacity-100">
+                                            <div className=" w-28 sm:w-44 rotate-45 overflow-hidden rounded-lg lg:opacity-100
+                                               transition 
+                                               duration-1000
+                                               ease-in-out 
+                                               
+                                               transform 
+                                               hover:-translate-y-2 
+                                               hover:rotate-[30deg] 
+                                               hover:scale-100 
+                                            ">
                                                 <img
                                                     src="/images/hoja8.png"
                                                     alt=""
@@ -77,15 +124,33 @@ export default function Home() {
                                                 />
                                             </div>
                                         </div>
-                                        <div className=" hidden grid-none lg:grid flex-shrink-0 grid-cols-1 gap-y-0 lg:gap-y-8 opacity-0 lg:opacity-100">
-                                            <div className=" w-32 overflow-hidden rounded-lg">
+                                        <div className=" hidden grid-none lg:grid  grid-cols-1 gap-y-0 lg:gap-y-8 opacity-0 lg:opacity-100">
+                                            <div className=" w-32 overflow-hidden rounded-lg
+                                             transition 
+                                             duration-1000
+                                             ease-in-out 
+                                             
+                                             transform 
+                                             hover:-translate-y-2 
+                                             hover:rotate-12
+                                             hover:scale-125 
+                                            ">
                                                 <img
                                                     src="/images/hoja7.png"
                                                     alt=""
                                                     className="h-full w-full object-cover object-center"
                                                 />
                                             </div>
-                                            <div className=" w-32 rotate-180 overflow-hidden rounded-lg  opacity-0 lg:opacity-100">
+                                            <div className=" w-32  overflow-hidden rounded-lg  opacity-0 lg:opacity-100
+                                             transition 
+                                             duration-1000
+                                             ease-in-out 
+                                             
+                                             transform 
+                                             hover:-translate-y-2 
+                                             hover:-rotate-6
+                                             hover:scale-125 
+                                            ">
                                                 <img
                                                     src="/images/hoja6.png"
                                                     alt=""

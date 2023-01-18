@@ -8,6 +8,7 @@ module.exports = {
       animation: {
         escribiendo: 'escribiendo 3s steps(60) infinite',
         parpadeo: '0.5s parpadeo infinite',
+
       },
       keyframes: {
         escribiendo: {
