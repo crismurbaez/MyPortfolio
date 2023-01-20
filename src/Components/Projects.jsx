@@ -63,7 +63,7 @@ export default function Projects() {
                                 </div>
                                 <div className="mt-4 flex justify-between  p-2">
                                     <div>
-                                        <h3 className=" text-base  font-['Century-Gothic'] tracking-[.01em]  text-orange-200 sm:text-3xl">
+                                        <h3 className=" text-base  font-['Century-Gothic'] tracking-[.01em]  text-orange-200 sm:text-xl">
 
                                             <span aria-hidden="true" className="absolute inset-0" />
                                             {project.name}
