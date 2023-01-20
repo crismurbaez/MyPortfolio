@@ -82,6 +82,7 @@ export default function Projects() {
                             <div className='flex flex-row'>
                                 <div className=' bg-orange-200 m-3 rounded-md p-2'>
                                     <a
+                                        target={"_blank"}
                                         href={project.href}
                                         name={project.href}
                                         className=" text-slate-900"
@@ -91,7 +92,9 @@ export default function Projects() {
                                 </div>
 
                                 <div className=' bg-orange-200  m-3 rounded-full'>
-                                    <a href={project.hrefGithub}>
+                                    <a
+                                        target={"_blank"}
+                                        href={project.hrefGithub}>
                                         <img
 
                                             src={project.imageGithub}
