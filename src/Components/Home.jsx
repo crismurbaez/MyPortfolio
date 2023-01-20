@@ -20,7 +20,7 @@ export default function Home() {
                             Recorran todos los apartados y luego envíenme un mensaje, para conversar con mayor profundidad. Saludos!!
                         </p>
                         <p className="mt-6">
-                            <a className="rounded-xl p-2 bg-orange-200 text-gray-900" href="https://drive.google.com/file/d/1H8vkT84D_9J4inX8WFtSUOrF4zrFgQ0S/view?usp=share_link">
+                            <a className="rounded-xl p-2 bg-orange-200 text-gray-900" target={"_blank"} href="https://drive.google.com/file/d/1H8vkT84D_9J4inX8WFtSUOrF4zrFgQ0S/view?usp=share_link">
                                 Descarga mi CV
                             </a>
                         </p>

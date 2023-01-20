@@ -98,7 +98,7 @@ export default function Contact() {
                                 </p>
                                 <div className="flex justify-center items-center justify-items-center flex-col sm:flex-row ">
                                     <div className=' bg-orange-200  my-3 rounded-full w-10 mx-14 sm:mx-3'>
-                                        <a href="https://github.com/crismurbaez">
+                                        <a target={"_blank"} href="https://github.com/crismurbaez">
                                             <img
 
                                                 src="/images/github.png"
@@ -109,7 +109,7 @@ export default function Contact() {
                                         </a>
                                     </div>
                                     <div className=' bg-orange-200  my-3  rounded-lg p-1 w-24  mx-14 sm:mx-3'>
-                                        <a href="https://www.linkedin.com/in/cristina-murguia/">
+                                        <a target={"_blank"} href="https://www.linkedin.com/in/cristina-murguia/">
                                             <img
 
                                                 src="/images/Linkedin.png"
