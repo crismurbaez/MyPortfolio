@@ -7,7 +7,7 @@ const projects = [
         href: 'https://www.youtube.com/watch?v=S9eVNDpX4xU',
         imageSrc: '/images/Food.png',
         imageAlt: "Proyecto Individual.",
-        detail: "Diseño y desarrollo de una app de recetas de comidas utilizando React, Redux, CSS puro, Node.js, Express y Sequelize. En la aplicación se pueden ver  distintas recetas de comidas junto con información relevante de las mismas utilizando la api externa spoonacular. Tiene un proceso de filtrados y ordenamientos. Se pueden buscar recetas por su nombre. Y crear nuevas recetas.",
+        detail: "App de recetas de comidas confeccionada con React, Redux, CSS puro, Node.js, Express y Sequelize. Se conecta a la api externa spoonacular. Se puede filtrar, ordenar y buscar recetas por su nombre además de crear nuevas recetas.",
         hrefGithub: 'https://github.com/crismurbaez/PI-Food',
         imageGithub: '/images/github.png',
         imageAltGithub: "PI.",
@@ -18,7 +18,7 @@ const projects = [
         href: 'https://clothes-4-crew.vercel.app/',
         imageSrc: '/images/Clothes1.png',
         imageAlt: "Proyecto Final.",
-        detail: "Diseño y desarrollo de E-commerce 'Clothes4Crew' para la compra de ropa y accesorios. Se desarrolló de manera colaborativa con reuniones diarias y realizando sprints semanales a un product owner.Catálogo de productos, login de usuarios, carrito de compras, checkout de la orden, dashboard de admin para carga y edición de productos, pasarela de pago, entre otras. Se implementaron metodologías ágiles SCRUM y control de versiones con Github",
+        detail: "E-commerce 'Clothes4Crew' de ropa y accesorios. Se implementaron metodologías ágiles SCRUM y control de versiones con Github",
         hrefGithub: 'https://github.com/AlejandroHELO/PF-Clothes-4Crew',
         imageGithub: '/images/github.png',
         imageAltGithub: "PF.",
@@ -35,6 +35,7 @@ const projects = [
         imageAltGithub: "PF.",
     },
 
+
 ]
 
 
@@ -45,11 +46,11 @@ export default function Projects() {
 
 
     return (
-        <div className="bg-gray-900">
+        <div className="bg-gray-900 min-w-full max-w-[100vw] min-h-screen max-h-full">
             <div className="mx-auto max-w-2xl py-6 px-4 sm:py-6 sm:px-6 lg:max-w-7xl lg:px-8">
                 <h2 className="text-6xl font-bold tracking-tight text-orange-200">Proyectos</h2>
 
-                <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 ">
+                <div className="mt-6 grid grid-cols-3 gap-y-10 gap-x-6 ">
                     {projects?.map((project) => (
                         <div>
                             <div key={project.id} className="group relative rounded-md border-solid border-2 border-orange-200">
@@ -62,7 +63,7 @@ export default function Projects() {
                                 </div>
                                 <div className="mt-4 flex justify-between  p-2">
                                     <div>
-                                        <h3 className=" text-3xl font-['Century-Gothic'] tracking-[.01em]  text-orange-200 sm:text-3xl">
+                                        <h3 className=" text-base  font-['Century-Gothic'] tracking-[.01em]  text-orange-200 sm:text-3xl">
 
                                             <span aria-hidden="true" className="absolute inset-0" />
                                             {project.name}
