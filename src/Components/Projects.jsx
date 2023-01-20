@@ -50,7 +50,7 @@ export default function Projects() {
             <div className="mx-auto max-w-2xl py-6 px-4 sm:py-6 sm:px-6 lg:max-w-7xl lg:px-8">
                 <h2 className="text-6xl font-bold tracking-tight text-orange-200">Proyectos</h2>
 
-                <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-y-10 gap-x-6 ">
+                <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-y-10 gap-x-6">
                     {projects?.map((project) => (
                         <div>
                             <div key={project.id} className="group relative rounded-md border-solid border-2 border-orange-200">
