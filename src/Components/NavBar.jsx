@@ -18,6 +18,8 @@ let navig = []
 export default function NavBar() {
     const navigate = useNavigate();
 
+
+
     // const [open, setOpen] = useState(false)
 
     const [navigation, setNavigation] = useState([
