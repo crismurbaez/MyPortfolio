@@ -26,7 +26,7 @@ const projects = [
     {
         id: 3,
         name: 'PORTFOLIO',
-        href: 'https://my-portfolio-sigma-ashy.vercel.app/',
+        href: 'https://cristinamurguia.xyz',
         imageSrc: '/images/Portfolio.png',
         imageAlt: "Portfolio.",
         detail: "Mi portafolio web personal responsive, donde te cuento un poco sobre mí, las habilidades técnicas que he adquirido y los proyectos desarrollados.",
