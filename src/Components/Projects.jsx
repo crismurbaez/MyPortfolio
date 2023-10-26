@@ -32,10 +32,30 @@ const projects = [
         detail: "Mi portafolio web personal responsive, donde te cuento un poco sobre mí, las habilidades técnicas que he adquirido y los proyectos desarrollados.",
         hrefGithub: 'https://github.com/crismurbaez/MyPortfolio',
         imageGithub: '/images/github.png',
-        imageAltGithub: "PF.",
+        imageAltGithub: "Portfolio.",
     },
-
-
+    {
+        id: 4,
+        name: 'Front-end: Mariana-Nails',
+        href: 'https://mariana-nails.vercel.app/',
+        imageSrc: '/images/Mariana_Nails.png',
+        imageAlt: "Mariana_Nails.",
+        detail: "Página Web de belleza de manos, pies y pestañas. Front-end desarrollado con el lenguaje Javascript y framework VueJs.",
+        hrefGithub: 'https://github.com/crismurbaez/mariana_nails',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "Mariana_Nails.",
+    },
+    {
+        id: 5,
+        name: 'Back-end: Mariana-Nails',
+        href: 'https://back-end-mariana-nails.vercel.app/',
+        imageSrc: '/images/Api_servicios.png',
+        imageAlt: "Back_Mariana_Nails.",
+        detail: "API de inventario de servicios que alimenta el Front-end de la página Web de Mariana-Nails.",
+        hrefGithub: 'https://github.com/crismurbaez/mariana_nails_back',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "Back_Mariana_Nails.",
+    },
 ]
 
 
