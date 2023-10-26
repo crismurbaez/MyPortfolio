@@ -96,7 +96,7 @@ export default function Contact() {
                                     Me encuentras en:
                                 </p>
                                 <div className="flex justify-center items-center justify-items-center flex-col sm:flex-row ">
-                                    <div className=' bg-orange-200  my-3 rounded-full w-10 mx-14 sm:mx-3'>
+                                    <div className='my-3 rounded-full w-10 mx-14 sm:mx-3'>
                                         <a target={"_blank"} href="https://github.com/crismurbaez">
                                             <img
 

@@ -107,11 +107,11 @@ export default function Projects() {
                                         name={project.href}
                                         className=" text-slate-900"
                                     >
-                                        Ir al {project.imageAlt}
+                                        Ir a {project.imageAlt}
                                     </a>
                                 </div>
 
-                                <div className=' bg-orange-200  m-3 rounded-full'>
+                                <div className='m-3 rounded-full'>
                                     <a
                                         target={"_blank"}
                                         href={project.hrefGithub}>
