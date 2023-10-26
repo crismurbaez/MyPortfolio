@@ -51,7 +51,7 @@ const projects = [
         href: 'https://back-end-mariana-nails.vercel.app/',
         imageSrc: '/images/Api_servicios.png',
         imageAlt: "Back_Mariana_Nails.",
-        detail: "API de inventario de servicios que alimenta el Front-end de la página Web de Mariana-Nails.",
+        detail: "API de inventario de servicios que alimenta el Front-end de la página Web de Mariana-Nails. Desarrollado con el lenguaje Pyhton y Flask.",
         hrefGithub: 'https://github.com/crismurbaez/mariana_nails_back',
         imageGithub: '/images/github.png',
         imageAltGithub: "Back_Mariana_Nails.",

@@ -21,13 +21,6 @@ const skills = [
         imageAlt: 'Java Script.',
     },
     {
-        id: 10,
-        name: 'NodeJs',
-        href: '#',
-        imageSrc: '/images/nodejs.png',
-        imageAlt: 'NodeJs.',
-    },
-    {
         id: 8,
         name: 'React',
         href: '#',
@@ -41,23 +34,13 @@ const skills = [
         imageSrc: '/images/redux.png',
         imageAlt: 'Redux.',
     },
-
     {
-        id: 2,
-        name: 'GIT',
+        id: 7,
+        name: 'VueJs',
         href: '#',
-        imageSrc: '/images/git.png',
-        imageAlt: 'GIT.',
+        imageSrc: '/images/Vue.js.png',
+        imageAlt: 'VueJs.',
     },
-    {
-        id: 13,
-        name: 'GitHub',
-        href: '#',
-        imageSrc: '/images/github.png',
-        imageAlt: 'github.',
-    },
-
-
     {
         id: 5,
         name: 'MUI',
@@ -73,6 +56,28 @@ const skills = [
         imageAlt: 'tailwind.',
     },
     {
+        id: 10,
+        name: 'NodeJs',
+        href: '#',
+        imageSrc: '/images/nodejs.png',
+        imageAlt: 'NodeJs.',
+    },
+    {
+        id: 13,
+        name: 'Python',
+        href: '#',
+        imageSrc: '/images/Python.png',
+        imageAlt: 'Pyhton.png.',
+    },
+    {
+        id: 14,
+        name: 'Flask',
+        href: '#',
+        imageSrc: '/images/flask.png',
+        imageAlt: 'flask.png.',
+    },
+
+    {
         id: 4,
         name: 'SQL',
         href: '#',
@@ -86,8 +91,6 @@ const skills = [
         imageSrc: '/images/postgresql.png',
         imageAlt: 'PostgreSql.',
     },
-
-
     {
         id: 11,
         name: 'MongoDb',
@@ -102,7 +105,6 @@ const skills = [
         imageSrc: '/images/sequelize.png',
         imageAlt: 'Sequelize.',
     },
-
     {
         id: 12,
         name: 'Postman',
@@ -110,7 +112,27 @@ const skills = [
         imageSrc: '/images/postman.png',
         imageAlt: 'postman.png.',
     },
-
+    {
+        id: 12,
+        name: 'Docker',
+        href: '#',
+        imageSrc: '/images/Docker.png',
+        imageAlt: 'postman.png.',
+    },
+    {
+        id: 2,
+        name: 'GIT',
+        href: '#',
+        imageSrc: '/images/git.png',
+        imageAlt: 'GIT.',
+    },
+    {
+        id: 13,
+        name: 'GitHub',
+        href: '#',
+        imageSrc: '/images/github.png',
+        imageAlt: 'github.',
+    },
     {
         id: 12,
         name: 'Vercel',
@@ -118,7 +140,6 @@ const skills = [
         imageSrc: '/images/vercel.png',
         imageAlt: 'vercel.png.',
     },
-
 
 ]
 
