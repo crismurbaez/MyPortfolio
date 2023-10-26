@@ -17,7 +17,8 @@ export default function Home() {
                         </h1>
                         <p className=" mt-4 mr-2 text-xl max-w-[300px] sm:max-w-full text-orange-200 text-justify">
                             👋 Hola!! Bienvenidos a mi portfolio...
-                            Recorran todos los apartados y luego envíenme un mensaje, para conversar con mayor profundidad. Saludos!!
+                            Aquí podrás conocer más de mis trabajos y habilidades,
+                            si te interesa conversar con mayor profundidad no dudes en enviarme un mensaje. Saludos!!
                         </p>
                         <p className="mt-6">
                             <a className="rounded-xl p-2 bg-orange-200 text-gray-900" target={"_blank"} href="https://drive.google.com/file/d/1H8vkT84D_9J4inX8WFtSUOrF4zrFgQ0S/view?usp=share_link">
