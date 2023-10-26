@@ -73,32 +73,41 @@ export default function Projects() {
                 <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-y-10 gap-x-6">
                     {projects?.map((project) => (
                         <div>
-                            <div key={project.id} className="group relative rounded-md border-solid border-2 border-orange-200">
-                                <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 ">
-                                    <img
-                                        src={project.imageSrc}
-                                        alt={project.imageAlt}
-                                        className="h-full w-full object-cover object-center "
-                                    />
-                                </div>
-                                <div className="mt-4 flex justify-between  p-2">
+                            <a
+                                target={"_blank"}
+                                href={project.href}
+                                name={project.href}
+                                className=" text-slate-900"
+                            >
+                                <div key={project.id} className="group relative rounded-md border-solid border-2 border-orange-200">
+                                    <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 ">
+
+                                        <img
+                                            src={project.imageSrc}
+                                            alt={project.imageAlt}
+                                            className="h-full w-full object-cover object-center "
+                                        />
+
+                                    </div>
+                                    <div className="mt-4 flex justify-between  p-2">
+                                        <div>
+                                            <h3 className=" text-base  font-['Century-Gothic'] tracking-[.01em]  text-orange-200 sm:text-xl">
+
+                                                <span aria-hidden="true" className="absolute inset-0" />
+                                                {project.name}
+
+                                            </h3>
+                                            <p className="text-sm text-orange-200 text-justify">{project.detail}</p>
+                                        </div>
+
+                                    </div>
                                     <div>
-                                        <h3 className=" text-base  font-['Century-Gothic'] tracking-[.01em]  text-orange-200 sm:text-xl">
 
-                                            <span aria-hidden="true" className="absolute inset-0" />
-                                            {project.name}
 
-                                        </h3>
-                                        <p className="text-sm text-orange-200 text-justify">{project.detail}</p>
                                     </div>
 
                                 </div>
-                                <div>
-
-
-                                </div>
-
-                            </div>
+                            </a>
                             <div className='flex flex-row'>
                                 <div className=' bg-orange-200 m-3 rounded-md p-2'>
                                     <a
@@ -133,6 +142,6 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
