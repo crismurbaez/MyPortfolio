@@ -34,7 +34,7 @@ export default function About() {
                 </div>
                 <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8 ">
                     <img
-                        src="/images/matematica4.jpg"
+                        src="/images/matematica.png"
                         alt="pluma."
                         className="rounded-lg bg-orange-200"
                     />
