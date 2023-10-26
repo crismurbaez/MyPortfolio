@@ -36,7 +36,7 @@ const projects = [
     },
     {
         id: 4,
-        name: 'Front-end: Mariana-Nails',
+        name: 'Front-End: Mariana-Nails',
         href: 'https://mariana-nails.vercel.app/',
         imageSrc: '/images/Mariana_Nails.png',
         imageAlt: "Mariana_Nails.",
@@ -47,7 +47,7 @@ const projects = [
     },
     {
         id: 5,
-        name: 'Back-end: Mariana-Nails',
+        name: 'Back-End: Mariana-Nails',
         href: 'https://back-end-mariana-nails.vercel.app/',
         imageSrc: '/images/Api_servicios.png',
         imageAlt: "Back_Mariana_Nails.",
