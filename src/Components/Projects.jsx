@@ -2,39 +2,6 @@ import React from 'react'
 
 const projects = [
     {
-        id: 1,
-        name: 'FULL STACK WEB DEVELOPER – Proyecto Individual',
-        href: 'https://www.youtube.com/watch?v=S9eVNDpX4xU',
-        imageSrc: '/images/Food.png',
-        imageAlt: "Proyecto Individual.",
-        detail: "App de recetas de comidas confeccionada con React, Redux, CSS puro, Node.js, Express y Sequelize. Se conecta a la api externa spoonacular. Se puede filtrar, ordenar y buscar recetas por su nombre además de crear nuevas recetas.",
-        hrefGithub: 'https://github.com/crismurbaez/PI-Food',
-        imageGithub: '/images/github.png',
-        imageAltGithub: "PI.",
-    },
-    {
-        id: 2,
-        name: 'FULL STACK WEB DEVELOPER – Proyecto Final',
-        href: 'https://clothes-4-crew.vercel.app/',
-        imageSrc: '/images/Clothes1.png',
-        imageAlt: "Proyecto Final.",
-        detail: "E-commerce 'Clothes4Crew' de ropa y accesorios. Se implementaron metodologías ágiles SCRUM y control de versiones con Github",
-        hrefGithub: 'https://github.com/AlejandroHELO/PF-Clothes-4Crew',
-        imageGithub: '/images/github.png',
-        imageAltGithub: "PF.",
-    },
-    {
-        id: 3,
-        name: 'PORTFOLIO',
-        href: 'https://cristinamurguia.xyz',
-        imageSrc: '/images/Portfolio.png',
-        imageAlt: "Portfolio.",
-        detail: "Mi portafolio web personal responsive, donde te cuento un poco sobre mí, las habilidades técnicas que he adquirido y los proyectos desarrollados.",
-        hrefGithub: 'https://github.com/crismurbaez/MyPortfolio',
-        imageGithub: '/images/github.png',
-        imageAltGithub: "Portfolio.",
-    },
-    {
         id: 4,
         name: 'Front-End: Mariana-Nails',
         href: 'https://mariana-nails.vercel.app/',
@@ -56,6 +23,42 @@ const projects = [
         imageGithub: '/images/github.png',
         imageAltGithub: "Back_Mariana_Nails.",
     },
+    {
+        id: 3,
+        name: 'PORTFOLIO',
+        href: 'https://cristinamurguia.xyz',
+        imageSrc: '/images/Portfolio.png',
+        imageAlt: "Portfolio.",
+        detail: "Mi portafolio web personal responsive, donde te cuento un poco sobre mí, las habilidades técnicas que he adquirido y los proyectos desarrollados.",
+        hrefGithub: 'https://github.com/crismurbaez/MyPortfolio',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "Portfolio.",
+    },
+    {
+        id: 2,
+        name: 'FULL STACK WEB DEVELOPER – Proyecto Final',
+        href: 'https://clothes-4-crew.vercel.app/',
+        imageSrc: '/images/Clothes1.png',
+        imageAlt: "Proyecto Final.",
+        detail: "E-commerce 'Clothes4Crew' de ropa y accesorios. Se implementaron metodologías ágiles SCRUM y control de versiones con Github",
+        hrefGithub: 'https://github.com/AlejandroHELO/PF-Clothes-4Crew',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "PF.",
+    },
+    {
+        id: 1,
+        name: 'FULL STACK WEB DEVELOPER – Proyecto Individual',
+        href: 'https://www.youtube.com/watch?v=S9eVNDpX4xU',
+        imageSrc: '/images/Food.png',
+        imageAlt: "Proyecto Individual.",
+        detail: "App de recetas de comidas confeccionada con React, Redux, CSS puro, Node.js, Express y Sequelize. Se conecta a la api externa spoonacular. Se puede filtrar, ordenar y buscar recetas por su nombre además de crear nuevas recetas.",
+        hrefGithub: 'https://github.com/crismurbaez/PI-Food',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "PI.",
+    },
+
+
+
 ]
 
 
