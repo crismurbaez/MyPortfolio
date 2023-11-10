@@ -39,7 +39,7 @@ export default function Contact() {
             mensaje: input.mensaje.trim(),
         };
 
-        if (templateParams.name === '' || templateParams.mail === '' || templateParams.asunto === '' || templateParams.mensaje === '') {
+        if (templateParams.name === '' || templateParams.email === '' || templateParams.asunto === '' || templateParams.mensaje === '') {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
