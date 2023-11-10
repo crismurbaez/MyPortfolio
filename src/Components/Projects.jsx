@@ -10,7 +10,7 @@ const projects = [
         detail: "Página Web de belleza de manos, pies y pestañas. Front-end desarrollado con el lenguaje Javascript y framework VueJs.",
         hrefGithub: 'https://github.com/crismurbaez/mariana_nails',
         imageGithub: '/images/github.png',
-        imageAltGithub: "Mariana_Nails.",
+        imageAltGithub: "github-Mariana_Nails.",
     },
     {
         id: 5,
@@ -21,8 +21,9 @@ const projects = [
         detail: "API de inventario de servicios desarrollado con el lenguaje Python y Flask. Alimenta el Front-end de la página Web de Mariana-Nails.",
         hrefGithub: 'https://github.com/crismurbaez/mariana_nails_back',
         imageGithub: '/images/github.png',
-        imageAltGithub: "Back_Mariana_Nails.",
+        imageAltGithub: "github-Back_Mariana_Nails.",
     },
+    // back-portfolio.png
     {
         id: 3,
         name: 'PORTFOLIO',
@@ -32,7 +33,18 @@ const projects = [
         detail: "Mi portafolio web personal responsive, donde te cuento un poco sobre mí, las habilidades técnicas que he adquirido y los proyectos desarrollados.",
         hrefGithub: 'https://github.com/crismurbaez/MyPortfolio',
         imageGithub: '/images/github.png',
-        imageAltGithub: "Portfolio.",
+        imageAltGithub: "github-Portfolio.",
+    },
+    {
+        id: 6,
+        name: 'BACK-PORTFOLIO',
+        href: 'https://back-portfolio-cris.vercel.app',
+        imageSrc: '/images/back-portfolio.png',
+        imageAlt: "Back-Portfolio.",
+        detail: "Back del protfolio creado con Python y flask, que se encarga de enviar emails a mi correo desde la sección de contactos.",
+        hrefGithub: 'https://github.com/crismurbaez/back_portfolio',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "github-back-portfolio.",
     },
     {
         id: 2,
@@ -43,7 +55,7 @@ const projects = [
         detail: "E-commerce 'Clothes4Crew' de ropa y accesorios. Se implementaron metodologías ágiles SCRUM y control de versiones con Github",
         hrefGithub: 'https://github.com/AlejandroHELO/PF-Clothes-4Crew',
         imageGithub: '/images/github.png',
-        imageAltGithub: "PF.",
+        imageAltGithub: "github-PF.",
     },
     {
         id: 1,
@@ -54,7 +66,7 @@ const projects = [
         detail: "App de recetas de comidas confeccionada con React, Redux, CSS puro, Node.js, Express y Sequelize. Se conecta a la api externa spoonacular. Se puede filtrar, ordenar y buscar recetas por su nombre además de crear nuevas recetas.",
         hrefGithub: 'https://github.com/crismurbaez/PI-Food',
         imageGithub: '/images/github.png',
-        imageAltGithub: "PI.",
+        imageAltGithub: "github-PI.",
     },
 
 
