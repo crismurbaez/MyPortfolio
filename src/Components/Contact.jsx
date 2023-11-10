@@ -1,11 +1,10 @@
 
 import { React, useState, useEffect } from "react";
-// import emailjs from '@emailjs/browser';
 import axios from "axios";
 import Swal from 'sweetalert2'
 
 export default function Contact() {
-    const SEND_EMAIL = process.env.URL_SEND_EMAIL
+    const SEND_EMAIL = process.env.REACT_APP_URL_SEND_EMAIL
 
     const [input, setInput] = useState({
         name: "",
@@ -32,6 +31,7 @@ export default function Contact() {
     const enviarMail = (e) => {
         e.preventDefault()
         //// ENVÍA EMAILS
+
         const templateParams = {
             name: input.name.trim(),
             email: input.mail.trim(),
@@ -54,9 +54,8 @@ export default function Contact() {
             })
         } else {
             axios.post(`${SEND_EMAIL}/sendemail`, templateParams)
-                // emailjs.send(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, templateParams, process.env.REACT_APP_YOUR_PUBLIC_KEY)
                 .then((response) => {
-                    console.log('SUCCESS!', response.status, response.text);
+                    console.log('SUCCESS!', response.status, response.data);
                     Swal.fire({
                         position: 'top-end',
                         icon: 'success',
@@ -75,9 +74,9 @@ export default function Contact() {
                     Swal.fire({
                         position: 'top-end',
                         icon: 'error',
-                        title: 'Ocurrió un error al enviar el mensaje!!',
+                        title: `Ocurrió un error al enviar el mensaje!! ${err.message}`,
                         showConfirmButton: false,
-                        timer: 2500,
+                        timer: 5000,
                         footer: 'Prueba enviarlo nuevamente dentro de unos minutos'
                     })
                 });
