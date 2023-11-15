@@ -11,6 +11,8 @@ const projects = [
         hrefGithub: 'https://github.com/crismurbaez/mariana_nails',
         imageGithub: '/images/github.png',
         imageAltGithub: "github-Mariana_Nails.",
+        hrefVideo: "",
+        nameVideo: ""
     },
     {
         id: 6,
@@ -22,6 +24,8 @@ const projects = [
         hrefGithub: 'https://github.com/crismurbaez/mariana_nails_back',
         imageGithub: '/images/github.png',
         imageAltGithub: "github-Back_Mariana_Nails.",
+        hrefVideo: "",
+        nameVideo: ""
     },
     {
         id: 5,
@@ -33,17 +37,21 @@ const projects = [
         hrefGithub: 'https://github.com/crismurbaez/PI-Food',
         imageGithub: '/images/github.png',
         imageAltGithub: "github-food.",
+        hrefVideo: 'https://www.youtube.com/watch?v=bg-3NY2NMLA',
+        nameVideo: "Video Food App."
     },
     {
         id: 4,
         name: 'BACK-FOOD RECIPES APP',
         href: 'https://pi-food-yekv.onrender.com/recipes',
         imageSrc: '/images/API-FOOD.png',
-        imageAlt: "Food BACK.",
+        imageAlt: "Back Food App.",
         detail: "Back de la App de recetas de comidas, confeccionada con Node.js, Express, PostgreSQL y Sequelize.",
         hrefGithub: 'https://github.com/crismurbaez/PI-Food',
         imageGithub: '/images/github.png',
         imageAltGithub: "github-food-back.",
+        hrefVideo: "",
+        nameVideo: ""
     },
 
     {
@@ -56,6 +64,8 @@ const projects = [
         hrefGithub: 'https://github.com/AlejandroHELO/PF-Clothes-4Crew',
         imageGithub: '/images/github.png',
         imageAltGithub: "github-ECOMMERCE.",
+        hrefVideo: "",
+        nameVideo: ""
     },
     {
         id: 2,
@@ -67,6 +77,8 @@ const projects = [
         hrefGithub: 'https://github.com/crismurbaez/MyPortfolio',
         imageGithub: '/images/github.png',
         imageAltGithub: "github-Portfolio.",
+        hrefVideo: "",
+        nameVideo: ""
     },
     {
         id: 1,
@@ -78,6 +90,8 @@ const projects = [
         hrefGithub: 'https://github.com/crismurbaez/back_portfolio',
         imageGithub: '/images/github.png',
         imageAltGithub: "github-back-portfolio.",
+        hrefVideo: "",
+        nameVideo: ""
     },
 
 
@@ -161,6 +175,21 @@ export default function Projects() {
                                         />
                                     </a>
                                 </div>
+                                {hrefVideo != "" ?
+                                    <div className=' bg-orange-200 m-3 rounded-md p-2'>
+                                        <a
+                                            target={"_blank"}
+                                            href={project.hrefVideo}
+                                            name={project.nameVideo}
+                                            className=" text-slate-900"
+                                        >
+                                            Ir a {project.nameVideo}
+                                        </a>
+                                    </div>
+
+                                    : null}
+
+
 
                             </div>
 
