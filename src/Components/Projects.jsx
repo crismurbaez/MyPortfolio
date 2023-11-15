@@ -25,17 +25,6 @@ const projects = [
     },
     {
         id: 5,
-        name: 'BACK-FOOD RECIPES APP',
-        href: 'https://pi-food-yekv.onrender.com/recipes',
-        imageSrc: '/images/API-FOOD.png',
-        imageAlt: "Food BACK.",
-        detail: "Back de la App de recetas de comidas, confeccionada con Node.js, Express, PostgreSQL y Sequelize.",
-        hrefGithub: 'https://github.com/crismurbaez/PI-Food',
-        imageGithub: '/images/github.png',
-        imageAltGithub: "github-food-back.",
-    },
-    {
-        id: 4,
         name: 'FOOD RECIPES APP',
         href: 'https://food-recipes-cris.vercel.app/',
         imageSrc: '/images/Food.png',
@@ -45,6 +34,18 @@ const projects = [
         imageGithub: '/images/github.png',
         imageAltGithub: "github-food.",
     },
+    {
+        id: 4,
+        name: 'BACK-FOOD RECIPES APP',
+        href: 'https://pi-food-yekv.onrender.com/recipes',
+        imageSrc: '/images/API-FOOD.png',
+        imageAlt: "Food BACK.",
+        detail: "Back de la App de recetas de comidas, confeccionada con Node.js, Express, PostgreSQL y Sequelize.",
+        hrefGithub: 'https://github.com/crismurbaez/PI-Food',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "github-food-back.",
+    },
+
     {
         id: 3,
         name: 'ECOMMERCE - Clothes4Crew',
