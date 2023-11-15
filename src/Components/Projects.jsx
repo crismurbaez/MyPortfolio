@@ -2,7 +2,7 @@ import React from 'react'
 
 const projects = [
     {
-        id: 4,
+        id: 7,
         name: 'Front-End: Mariana-Nails',
         href: 'https://mariana-nails.vercel.app/',
         imageSrc: '/images/Mariana_Nails.png',
@@ -13,7 +13,7 @@ const projects = [
         imageAltGithub: "github-Mariana_Nails.",
     },
     {
-        id: 5,
+        id: 6,
         name: 'Back-End: Mariana-Nails',
         href: 'https://back-end-mariana-nails.vercel.app/',
         imageSrc: '/images/Api_servicios.png',
@@ -23,9 +23,41 @@ const projects = [
         imageGithub: '/images/github.png',
         imageAltGithub: "github-Back_Mariana_Nails.",
     },
-    // back-portfolio.png
+    {
+        id: 5,
+        name: 'BACK-FOOD RECIPES APP',
+        href: 'https://pi-food-yekv.onrender.com/recipes',
+        imageSrc: '/images/API-FOOD.png',
+        imageAlt: "Food BACK.",
+        detail: "Back de la App de recetas de comidas, confeccionada con Node.js, Express, PostgreSQL y Sequelize.",
+        hrefGithub: 'https://github.com/crismurbaez/PI-Food',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "github-food-back.",
+    },
+    {
+        id: 4,
+        name: 'FOOD RECIPES APP',
+        href: 'https://food-recipes-cris.vercel.app/',
+        imageSrc: '/images/Food.png',
+        imageAlt: "Food App.",
+        detail: "App de recetas de comidas confeccionada con React, Redux, CSS puro. Se puede filtrar, ordenar y buscar recetas por su nombre además de crear nuevas recetas.",
+        hrefGithub: 'https://github.com/crismurbaez/PI-Food',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "github-food.",
+    },
     {
         id: 3,
+        name: 'ECOMMERCE - Clothes4Crew',
+        href: 'https://clothes-4-crew.vercel.app/',
+        imageSrc: '/images/Clothes1.png',
+        imageAlt: "ECOMMERCE.",
+        detail: "E-commerce 'Clothes4Crew' de ropa y accesorios. Se implementaron metodologías ágiles SCRUM y control de versiones con Github",
+        hrefGithub: 'https://github.com/AlejandroHELO/PF-Clothes-4Crew',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "github-ECOMMERCE.",
+    },
+    {
+        id: 2,
         name: 'PORTFOLIO',
         href: 'https://cristinamurguia.xyz',
         imageSrc: '/images/Portfolio.png',
@@ -36,7 +68,7 @@ const projects = [
         imageAltGithub: "github-Portfolio.",
     },
     {
-        id: 6,
+        id: 1,
         name: 'BACK-PORTFOLIO',
         href: 'https://back-portfolio-cris.vercel.app',
         imageSrc: '/images/back-portfolio.png',
@@ -46,28 +78,8 @@ const projects = [
         imageGithub: '/images/github.png',
         imageAltGithub: "github-back-portfolio.",
     },
-    {
-        id: 2,
-        name: 'FULL STACK WEB DEVELOPER – Proyecto Final',
-        href: 'https://clothes-4-crew.vercel.app/',
-        imageSrc: '/images/Clothes1.png',
-        imageAlt: "Proyecto Final.",
-        detail: "E-commerce 'Clothes4Crew' de ropa y accesorios. Se implementaron metodologías ágiles SCRUM y control de versiones con Github",
-        hrefGithub: 'https://github.com/AlejandroHELO/PF-Clothes-4Crew',
-        imageGithub: '/images/github.png',
-        imageAltGithub: "github-PF.",
-    },
-    {
-        id: 1,
-        name: 'FULL STACK WEB DEVELOPER – Proyecto Individual',
-        href: 'https://www.youtube.com/watch?v=S9eVNDpX4xU',
-        imageSrc: '/images/Food.png',
-        imageAlt: "Proyecto Individual.",
-        detail: "App de recetas de comidas confeccionada con React, Redux, CSS puro, Node.js, Express y Sequelize. Se conecta a la api externa spoonacular. Se puede filtrar, ordenar y buscar recetas por su nombre además de crear nuevas recetas.",
-        hrefGithub: 'https://github.com/crismurbaez/PI-Food',
-        imageGithub: '/images/github.png',
-        imageAltGithub: "github-PI.",
-    },
+
+
 
 
 
