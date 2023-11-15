@@ -187,7 +187,7 @@ export default function Projects() {
                                         </a>
                                     </div>
 
-                                    : null}
+                                    : <div></div>}
 
 
 
