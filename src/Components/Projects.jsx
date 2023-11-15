@@ -175,7 +175,7 @@ export default function Projects() {
                                         />
                                     </a>
                                 </div>
-                                {hrefVideo != "" ?
+                                {project.hrefVideo != "" ?
                                     <div className=' bg-orange-200 m-3 rounded-md p-2'>
                                         <a
                                             target={"_blank"}
