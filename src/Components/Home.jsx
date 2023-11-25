@@ -21,7 +21,7 @@ export default function Home() {
                             si te interesa conversar con mayor profundidad no dudes en enviarme un mensaje. Saludos!!
                         </p>
                         <p className="mt-6">
-                            <a className="rounded-xl p-2 bg-orange-200 text-gray-900" target={"_blank"} href="https://drive.google.com/file/d/1H8vkT84D_9J4inX8WFtSUOrF4zrFgQ0S/view?usp=share_link">
+                            <a className="rounded-xl p-2 bg-orange-200 text-gray-900" target={"_blank"} href="https://drive.google.com/file/d/1t1aaJdqAvedvlBLXKlwuGdv8WoxG6I9D/view?usp=sharing">
                                 Descarga mi CV
                             </a>
                         </p>
