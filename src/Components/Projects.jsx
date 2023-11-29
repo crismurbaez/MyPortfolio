@@ -73,7 +73,7 @@ const projects = [
         href: 'https://cristinamurguia.xyz',
         imageSrc: '/images/Portfolio.png',
         imageAlt: "Portfolio.",
-        detail: "Mi portafolio web personal responsive, donde te cuento un poco sobre mí, las habilidades técnicas que he adquirido y los proyectos desarrollados. Confeccionado don HTML, Javascrip, React, Tailwind Css",
+        detail: "Mi portafolio web personal responsive, donde te cuento un poco sobre mí, las habilidades técnicas que he adquirido y los proyectos desarrollados. Confeccionado con HTML, Javascrip, React, Tailwind Css",
         hrefGithub: 'https://github.com/crismurbaez/MyPortfolio',
         imageGithub: '/images/github.png',
         imageAltGithub: "github-Portfolio.",
