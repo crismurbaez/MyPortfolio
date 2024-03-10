@@ -15,6 +15,8 @@ let hrefant = ''
 let name = ''
 let href = ''
 let navig = []
+
+
 export default function NavBar() {
     const navigate = useNavigate();
 

@@ -2,6 +2,45 @@ import React from 'react'
 
 const projects = [
     {
+        id: 10,
+        name: 'Front-End: ServiYA',
+        href: ' https://serviya-front.vercel.app/',
+        imageSrc: '/images/ServiYA.png',
+        imageAlt: "ServiYA.",
+        detail: "Primer MVP de un Ecommerce de soluciones técnicas para el hogar, en los próximos MVP se construirán las funcionalidades completas y la capacidad responsive. Proyecto realizado en simulación laboral de No Country. Grupo de trabajo con 3 personas UX-UI, 2 Front-End y 2 Full Stack. Se implementaron metodologías ágiles SCRUM y control de versiones con Github. Desarrollado con HTML, CSS, Javascript, React, Zustand, Tailwind Css, socket.io-client. Esta experiencia nos permitió trabajar siguiendo un diseño confeccionado en Figma con un primer MVP. El grupo seguirá trabajando hasta confeccionar todas las funcionalidades completas de un ecommerce.",
+        hrefGithub: 'https://github.com/No-Country/c16-22-n-node-react/tree/main/front',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "github-ServiYA.",
+        hrefVideo: "",
+        nameVideo: ""
+    },
+    {
+        id: 9,
+        name: 'Back-End: ServiYA',
+        href: 'https://serviya-back.vercel.app/',
+        imageSrc: '/images/ServiYA-back.png',
+        imageAlt: "ServiYA.",
+        detail: "Back-End: API de ServiYA. Se utilizaron las tecnologías: NodeJs, Express, MongoDB, Mongoose, Cloudinary, Jsonwebtoken, Socket.io, Streamifier",
+        hrefGithub: 'https://github.com/No-Country/c16-22-n-node-react/tree/main/back',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "github-ServiYA.",
+        hrefVideo: "",
+        nameVideo: ""
+    },
+    {
+        id: 8,
+        name: 'Front-End: Cocina Amiga',
+        href: 'https://cocina-amiga.vercel.app/',
+        imageSrc: '/images/Cocina-Amiga.png',
+        imageAlt: "Cocina Amiga.",
+        detail: ". Página Web totalmente responsive de cocina vegetariana, tortas y postres. Front-End desarrollado con HTML, CSS, JavaScript y framework React.",
+        hrefGithub: 'https://github.com/crismurbaez/mariana_nails',
+        imageGithub: '/images/github.png',
+        imageAltGithub: "github-Mariana_Nails.",
+        hrefVideo: "",
+        nameVideo: ""
+    },
+    {
         id: 7,
         name: 'Front-End: Mariana-Nails',
         href: 'https://mariana-nails.vercel.app/',
