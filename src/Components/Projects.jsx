@@ -34,7 +34,7 @@ const projects = [
         imageSrc: '/images/Cocina-Amiga.png',
         imageAlt: "Cocina Amiga.",
         detail: ". Página Web totalmente responsive de cocina vegetariana, tortas y postres. Front-End desarrollado con HTML, CSS, JavaScript y framework React.",
-        hrefGithub: 'https://github.com/crismurbaez/mariana_nails',
+        hrefGithub: 'https://github.com/crismurbaez/cocina_amiga',
         imageGithub: '/images/github.png',
         imageAltGithub: "github-Mariana_Nails.",
         hrefVideo: "",
