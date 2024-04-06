@@ -33,7 +33,7 @@ const projects = [
         href: 'https://cocina-amiga.vercel.app/',
         imageSrc: '/images/Cocina-Amiga.png',
         imageAlt: "Cocina Amiga.",
-        detail: ". Página Web totalmente responsive de cocina vegetariana, tortas y postres. Front-End desarrollado con HTML, CSS, JavaScript y framework React.",
+        detail: "Página Web totalmente responsive de cocina vegetariana, tortas y postres. Front-End desarrollado con HTML, CSS, JavaScript y framework React.",
         hrefGithub: 'https://github.com/crismurbaez/cocina_amiga',
         imageGithub: '/images/github.png',
         imageAltGithub: "github-Mariana_Nails.",
@@ -158,7 +158,7 @@ export default function Projects() {
                                 target={"_blank"}
                                 href={project.href}
                                 name={project.href}
-                                className=" text-slate-900"
+                                className=" text-slate-900" rel="noreferrer"
                             >
                                 <div key={project.id} className="group relative rounded-md border-solid border-2 border-orange-200">
                                     <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 ">
@@ -166,7 +166,7 @@ export default function Projects() {
                                         <img
                                             src={project.imageSrc}
                                             alt={project.imageAlt}
-                                            className="h-full w-full object-cover object-center "
+                                            className="h-full w-full object-contain object-center "
                                         />
 
                                     </div>
@@ -195,7 +195,7 @@ export default function Projects() {
                                         target={"_blank"}
                                         href={project.href}
                                         name={project.href}
-                                        className=" text-slate-900"
+                                        className=" text-slate-900" rel="noreferrer"
                                     >
                                         Ir a {project.imageAlt}
                                     </a>
@@ -204,7 +204,7 @@ export default function Projects() {
                                 <div className='m-3 rounded-full'>
                                     <a
                                         target={"_blank"}
-                                        href={project.hrefGithub}>
+                                        href={project.hrefGithub} rel="noreferrer">
                                         <img
 
                                             src={project.imageGithub}
@@ -220,7 +220,7 @@ export default function Projects() {
                                             target={"_blank"}
                                             href={project.hrefVideo}
                                             name={project.nameVideo}
-                                            className=" text-slate-900"
+                                            className=" text-slate-900" rel="noreferrer"
                                         >
                                             Ir a {project.nameVideo}
                                         </a>
