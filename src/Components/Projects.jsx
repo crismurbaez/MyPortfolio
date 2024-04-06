@@ -161,12 +161,12 @@ export default function Projects() {
                                 className=" text-slate-900" rel="noreferrer"
                             >
                                 <div key={project.id} className="group relative rounded-md border-solid border-2 border-orange-200">
-                                    <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 ">
+                                    <div className="h-80  aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 ">
 
                                         <img
                                             src={project.imageSrc}
                                             alt={project.imageAlt}
-                                            className="h-full w-full object-contain object-center "
+                                            className="h-full w-full object-cover object-center "
                                         />
 
                                     </div>
